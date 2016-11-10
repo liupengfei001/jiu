@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>首页</title>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/com_index.css" />
+	<link rel="stylesheet" href="css/style_shouye.css" />
+	
+	<script type="text/javascript" src="js/jquery-1.11.3.js" ></script>
+	<script type="text/javascript" src="js/jquery.cookie.js" ></script>  <!--存储-->
+	<script type="text/javascript" src="js/com_index.js" ></script>
+	<script type="text/javascript" src="js/shouye.js" ></script>
+</head>
+<body>
+<div id="wrap">
+	<!--网页头部 -->
+	<div id="top">
+		<div class="top_l">
+			<p>关注购酒网</p>
+			<img src="http://www.gjw.com/v6/images/qrcode_06.jpg" />
+		</div>
+		<ul> 
+			<li style="border:none" id="show_name">Hi,请
+				<a href="login.html" class="blue">登录</a><span>/</span>
+				<a href="Registe.html" class="blue">注册</a>
+			</li>
+			<li><a href="ShoppingCart.html">我的订单</a></li>
+			<li><a href="">用户中心&emsp;&or;</a></li>
+			<li><a href="">在线客服</a></li>
+			<li><a href="" class="Esc">帮助</a></li>
+			<li><a href="">提意见</a></li>
+			<li><i class="red">&loz;400-722-1919</i></li>
+		</ul>
+		<!--用户中心子菜单-->
+		<div id="top_user">
+			<li><a href="DetailPages.html#appraise">商品评论</a></li>
+			<li><a href="">收藏夹</a></li>
+			<li><a href="">我的电子券</a></li>
+		</div>
+	</div>
+	<!--头部图片-->
+	<div id="top_img">
+		<a href=""><img class="img2" src="http://img0.gjw.com/Famous/2016/0908/5fae9aa516e549ecaf732e1c1d1cb5e1.jpg" title="" alt=""/></a>	
+		<a href=""><img src="http://img0.gjw.com/Famous/2016/0908/499de9b2573d4a83bae900d7737bded9.jpg" title="" alt=""/></a>
+
+		<div class="top_img_btn">展开</div>
+	</div>
+	<!--提示框-->
+	<div id="top_tip">
+		<img src="img/lb_03.png" /><span><a href="">99狂欢节 1元抢茅台醉高立减500元</a></span>
+		<input type="button" class="top_tip_btn" value="关闭"/>
+	</div>
+	
+	<!--导航条-->
+	<div id="nav">
+		<div id="nav_up">	<!--上-->
+			<div class="nav_up_l">
+				<a href=""><img class="nav_up_l_img1" src="http://www.gjw.com/v5/images/hd_logo.jpg" title="购酒网" alt="购酒网"/></a>
+				<a href=""><img class="nav_up_l_img2" src="http://img0.gjw.com/Famous/2016/0909/7a75b4e4005b4a939555601fceb4fbc4.gif" title="" alt=""/></a>
+			</div>
+			<div class="nav_up_c">
+				<input type="text" mane="sousuo"/><span>搜索</span>
+				<ul>
+					<li><a href="ListPages.html">茅台</a></li>
+					<li><a href="ListPages.html">郎酒</a></li>
+					<li><a href="ListPages.html">五粮液</a></li>
+					<li><a href="ListPages.html">剑南春</a></li>
+					<li><a href="ListPages.html">泸州老窖</a></li>
+					<li><a href="ListPages.html">洋河</a></li>
+				</ul>
+			</div>
+			<div class="nav_up_r">
+				<div class="shopping_car"><b id="goods_num" class="goods_num"></b><a href="ShoppingCart.html"><span></span>我的购物车</a>
+					&gt;
+				</div>
+				<div class="shopping_tip" id="add_goods">
+					<span></span> 哎呦，来都来了，不买点什么吗？
+					
+					<!--<dl>
+						<dt><img src="img/右侧栏.png"/></dt>
+						<dd>收集高hin JOJO<b class="prices">￥599*3</b><strong class="Num Del">删除</strong></dd>
+					</dl>-->
+				</div>
+			</div>
+		</div>
+		<div id="nav_down">	<!--下-->
+			<div class="nav_down_l" id="All_mune">全部商品分类</div>
+			<ul class="nav_down_c">
+				<li><a href="index.html" style="color:#C40000;">首页</a></li>
+				<li><a href="ListPages.html">特卖会</a>
+					<span class="nav_down_c_span">HOT</span>
+				</li>
+				<li><a href="ListPages.html">进口馆</a></li>
+				<li><a href="ListPages.html">陈年老酒</a></li>
+				<li><a href="ListPages.html">醉爱小酒版</a></li>
+				<li><a href="ListPages.html">高端收藏酒</a></li>
+			</ul>
+			<img class="nav_down_r" src="http://img0.gjw.com/Famous/2016/0909/cd4d6d58a6be425ab927fa867b21acf0.gif" />
+		</div>
+	</div>
+	
+<!--主题轮播图-->
+<div id="banner">
+	<div id="Max_lunbo">
+		<ul class="banner_lunbo">
+			<li style="z-index: 1;"><img src="http://img0.gjw.com/Famous/2016/0908/91fae8d1e4124c3b93b6618c983b3baf.jpg"></li>
+			<li><img src="http://img0.gjw.com/Famous/2016/0908/7798c5562412420ca351a4c430667b15.jpg"></li>
+			<li><img src="http://img0.gjw.com/Famous/2016/0909/3a61be2e3fcd417693a59828aa23d714.jpg"></li>
+			<li><img src="http://img0.gjw.com/Famous/2016/0908/83f066c873e54b69a951aefddcfd4e55.jpg"></li>
+			<li><img src="http://img0.gjw.com/Famous/2016/0829/a7cc426e46cf4db781db83d4af115424.jpg"></li>
+			<li><img src="http://img0.gjw.com/Famous/2016/0823/46fb2041101743b9893e69cd8d402588.jpg"></li>
+			<li><img src="http://img0.gjw.com/Famous/2016/0829/37c1bd0ae32d4ad6a2378447fd3461f4.jpg"></li>
+		</ul>
+		<p>
+			<span style="background: #C40000;">1</span>	<!--轮播图下标-->
+			<span>2</span>
+			<span>3</span>
+			<span>4</span>
+			<span>5</span>
+			<span>6</span>
+			<span>7</span>
+		</p>
+	</div>	
+	<!--侧栏菜单-->
+<div id="mune">
+	<ul class="mune_car"><!--购酒直通车-->
+		<h3><a href="ListPages.html">购酒直通车</a></h3>
+		<li><a href="ListPages.html">大坛美酒</a></li>
+		<li><a href="ListPages.html" class="com">高端收藏</a></li>
+		<li><a href="ListPages.html">送礼推荐</a></li>
+		<li><a href="ListPages.html">整箱促销</a></li>
+		<li><a href="ListPages.html">封顶49元</a></li>
+		<li><a href="ListPages.html">婚宴用酒</a></li>
+	</ul>
+	<ul class="mune_white"><!--白酒-->
+		<h3><a href="ListPages.html">白酒 </a><span>&gt;</span></h3>
+		<li><a href="ListPages.html" class="com">茅台</a></li>
+		<li><a href="ListPages.html" class="com">五粮液</a></li>
+		<li><a href="ListPages.html">郎酒</a></li>
+		<li><a href="ListPages.html">剑南春</a></li>
+		<li><a href="ListPages.html">国窖1573</a></li>
+		<li><a href="ListPages.html">泸州老窖</a></li>
+		<li><a href="ListPages.html" class="com">年份老酒</a></li>
+		
+	</ul>
+	<ul class="mune_grape"><!--葡萄酒-->
+		<h3><a href="ListPages.html">葡萄酒 </a><span>&gt;</span></h3>
+		<li><a href="ListPages.html" class="com">拉菲</a></li>
+		<li><a href="ListPages.html">黄尾袋鼠</a></li>
+		<li><a href="ListPages.html">奔富</a></li>
+		<li><a href="ListPages.html" class="com">皇族雄狮</a></li>
+		<li><a href="ListPages.html">张裕</a></li>
+		<li><a href="ListPages.html"> 杰卡斯</a></li>
+	</ul>
+	<ul class="mune_yang"><!--洋酒-->
+		<h3><a href="ListPages.html">洋酒 </a><span>&gt;</span></h3>
+		<li><a href="ListPages.html" class="com">人头马</a></li>
+		<li><a href="ListPages.html">芝华士</a></li>
+		<li><a href="ListPages.html" class="com">皇家路易</a></li>
+		<li><a href="ListPages.html">尊尼获加</a></li>
+		<li><a href="ListPages.html">格兰菲迪</a></li>
+		<li><a href="ListPages.html">百龄坛</a></li>
+	</ul>
+	<ul class="mune_yellow"><!--黄酒-->
+		<h3><a href="ListPages.html">黄酒 养生酒 啤酒 </a><span>&gt;</span></h3>
+		<li><a href="ListPages.html">古越龙山</a></li>
+		<li><a href="ListPages.html">女儿红</a></li>
+		<li><a href="ListPages.html">唐宋</a></li>
+		<li><a href="ListPages.html">劲酒</a></li>
+		<li><a href="ListPages.html">竹叶青</a></li>
+	</ul>
+	<ul class="mune_tea"><!--茶叶-->
+		<li><a href="ListPages.html" class="com">茶叶 </a></li>
+		<li><a href="ListPages.html">酒具</a></li>
+		<li><a href="ListPages.html">新品</a></li>
+		<li><a href="ListPages.html">清仓专区</a></li>
+	</ul>
+</div><!--end一级侧栏-->
+
+<!--白酒子页-->
+<div id="white_mune">
+	<div class="white_mune_left">
+		<div class="white_mune_left_up">
+			<ul><!--顶部标题-->
+				<li><a href="ListPages.html">亏本清仓专区</a><span>&gt;</span></li>
+				<li><a href="ListPages.html">高端收藏酒</a><span>&gt;</span></li>
+				<li><a href="ListPages.html">陈年老酒专区</a><span>&gt;</span></li>
+				<li><a href="ListPages.html">特卖会</a><span>&gt;</span></li>
+			</ul>
+		</div>
+		<div class="white_mune_left_center">
+			<ul id="white_brand"></ul>
+		</div>
+		<div class="white_mune_left_down">
+			<ul id="white_odor" class="left_down_left"></ul><!--香型-->
+			<ul id="white_nation" class="left_down_right"></ul><!--产地-->
+		</div>
+	</div><!--end最左边-->
+	<div class="white_mune_right">
+		<img src="http://img0.gjw.com/Famous/2016/0908/de8427408177478a8639f5c13dafe47e.jpg"/>
+		<img src="http://img0.gjw.com/Famous/2016/0908/32ad25cd75fe4f919942180ee91d1f9c.jpg"/>
+	</div>
+</div><!--end白酒子页-->
+
+<!--葡萄酒子页-->
+<div id="grape_mune">
+	<div class="white_mune_left">
+		<div class="white_mune_left_up">
+			<ul>
+				<li><a href="ListPages.html">法国原装进口</a><span>&gt;</span></li>
+				<li><a href="ListPages.html">澳大利亚原装进口</a><span>&gt;</span></li>
+				<li><a href="ListPages.html">起泡酒香槟酒</a><span>&gt;</span></li>
+			</ul>
+		</div>
+		<div class="grape_mune_left_c">
+			<ul id="grape_nation" class="grape_mune_left_c_l"></ul><!--产国-->
+			<ul id="grape_Variety" class="grape_mune_left_c_c"></ul><!--品种-->
+			<ul id="grape_type" class="grape_mune_left_c_r"></ul><!--类型-->
+		</div>
+		<div class="grape_mune_left_d"><ul id="grape_brand"></ul>
+		</div><!--品牌-->
+	</div>	
+	<!--end最左边-->
+	<div class="white_mune_right">
+		<img src="http://img0.gjw.com/Famous/2016/0723/0c939110b3d847078f0202468dca5623.jpg"/>
+		<img src="http://img0.gjw.com/Famous/2016/0402/7ea8f829cc0f4c169644d4bc706484db.jpg"/>
+	</div><!--end最右边-->
+</div><!--end葡萄酒子页-->
+
+<!--洋酒-->
+<div id="froeign_mune">
+	<div class="white_mune_left">
+		<div class="white_mune_left_up">
+			<ul><li><a href="ListPages.html">格兰菲迪</a><span>&gt;</span></li></ul><!--顶部标题-->
+		</div>
+		<div class="white_mune_left_center froeign_left_center">
+			<ul id="froeign_brand"></ul><!--葡萄酒品牌-->
+		</div>
+		<div class="white_mune_left_down froeign_left_down">
+			<div class="froeign_left_down_l">
+				<ul id="froeign_nation" class="left_down_left"></ul>
+				<ul id="froeign_type" class="left_down_right"></ul>	
+			</div>
+			<div class="froeign_left_down_r">
+				<a href="ListPages.html"><img src="http://img0.gjw.com/Famous/2016/0803/83a5551a4b0d47858da10e37f6ebc7c9.jpg"/></a>
+				<a href="ListPages.html"><img src="http://img0.gjw.com/Famous/2015/1110/fcdf1d791586412a8592b3bca0c76a88.jpg"/></a>
+			</div>
+		</div>
+	</div><!--end最左边-->
+	<div class="white_mune_right">
+		<img src="http://img0.gjw.com/Famous/2016/0503/1caabc7c11ad4987b2c4647420cafd90.jpg"/>
+		<img src="http://img0.gjw.com/Famous/2016/0503/d79cc0ee98b14c1585867d208ade74a3.jpg"/>
+	</div><!--end最右边-->
+</div><!--end洋酒子页-->
+
+
+<!--黄酒-->
+<div id="yellow_mune">
+	<div class="white_mune_left yellow_mune_l">
+		<ul id="yellow_brand"></ul>
+		<ul id="health_brand"></ul>
+		<ul id="beer_brand"></ul>
+		<ul id="yellow_price" class="price"></ul>
+		<ul id="health_price" class="price"></ul>
+		<ul id="beer_price" class="price"></ul>
+		<ul><img src="http://img0.gjw.com/Famous/2015/1116/72098fb3c295465fa271a3104d434110.jpg" /></ul>
+		<ul><img src="http://img0.gjw.com/Famous/2015/1116/2b0840daceb84b4d919993eed1c53025.jpg" /></ul>
+		<ul><img src="http://img0.gjw.com/Famous/2016/0603/43ce0bb0096e489dbab0690f50e3171b.jpg" /></ul>
+	</div><!--end最左边-->
+	<div class="white_mune_right">
+		<img src="http://img0.gjw.com/Famous/2016/0910/bfa88924e8454e448b1b04a15133d421.jpg"/>
+		<img src="http://img0.gjw.com/Famous/2016/0903/c240cc8f272241c59330b4e068d801cf.jpg"/>
+	</div><!--end最右边-->
+</div><!--end黄酒子页-->
+
+
+<div id="banner_right"><img src="http://img0.gjw.com/Famous/2016/0908/e66a2c0a83ea4bfcb73e529f66191153.png" title="" alt=""/></div>
+</div><!--end-主题轮播-->
+
+
+
+
+
+
+
+
+
+</div><!--end  wrap-->
+
+
+
+
+
+
+
+
+<!--图片列表1-->
+
+<div id="img_list1">
+	<div id="img_list1_l"><img src="http://img0.gjw.com/Famous/2016/0908/399d05aec9304643938a6ffda24c10ed.jpg"/></div>
+	<div id="img_list1_r">
+		<ul class="ul1">
+			<li><a><img src="http://img0.gjw.com/Famous/2016/0908/118a254b2f184089a04314c6d28c6896.gif"/></a></li>
+			<li><a><img src="http://img0.gjw.com/Famous/2016/0908/33141a40fccc4ae190e1fe48822cb760.gif"/></a></li>
+			<li><a><img src="http://img0.gjw.com/Famous/2016/0908/1a64c34351c144d2ae51e3afd35dc12d.gif"/></a></li>
+			<li><a><img src="http://img0.gjw.com/Famous/2016/0908/06a4e71d3f514371a60d7abed6f6d0e8.gif"/></a></li>
+		</ul class="ul2">
+		<ul>
+			<li><a><img src="http://img0.gjw.com/Famous/2016/0817/c30938563ce14166aa55ce091a1d0413.gif"/></a></li>
+			<li><a><img src="http://img0.gjw.com/Famous/2016/0620/f9886ffa583e4f9e8f27a1a512f2070b.gif"/></a></li>
+			<li><a><img src="http://img0.gjw.com/Famous/2016/0620/3182a607c23a4f3991eab3f7c3709f01.gif"/></a></li>
+			<li><a><img src="http://img0.gjw.com/Famous/2016/0624/2c49b4cca56d4267b20570fcf0484b1d.gif"/></a></li>
+		</ul>
+		<div class="prev com_style">&lt;</div>
+		<div class="next com_style">&gt;</div>
+	</div>
+</div>
+
+<!--购酒推荐——限时抢购-->
+<div id="img_list2">
+	<h2>购酒推荐&emsp;|<span>限时特惠</span></h2>
+	<div class="img_list2_l"></div>
+	<div class="img_list2_c">
+		<ul>
+			<li>
+				<h3><a href="ListPages.html">酒水节特卖 只有四天 </a></h3>
+				<h5><a href="ListPages.html">52度 伊力特曲 500ml*6</a></h5>
+				<h6><a href="ListPages.html">299元</a></h6>
+				<img src="http://img0.gjw.com/product/2015/0923/6d68acd67c884f3998cc444a970b7bb1_1.jpg" />
+				
+			</li>
+			<li>
+				<h3><a href="ListPages.html">品味世界美酒 领略异地风情</a></h3>
+				<h5><a href="ListPages.html">轩尼诗Hennessy XO 干邑白兰地 700ml</a></h5>
+				<h6><a href="ListPages.html">1268元 </a></h6>
+				<img src="http://img0.gjw.com/product/2012/0425/8890db5d5f7e4cddaa0bd7ed0d0ed5cc_1.JPG" />
+				
+			</li>
+			<li>
+				<h3><a href="ListPages.html">酒水节特卖 只有四天</a></h3>
+				<h5><a href="ListPages.html">48度 湘泉 老湘泉 小酒版 125ml*24 </a></h5>
+				<h6><a href="ListPages.html">179元 </a></h6>
+				<img src="http://img0.gjw.com/product/2014/0901/4045223ff0164d82a57c965bbb757ff3_1.jpg" />
+				
+			</li>
+			<li>
+				<h3><a href="ListPages.html">劲爆特卖 卖完涨价</a></h3>
+				<h5><a href="ListPages.html">52度 泸州老窖 特曲 500ml</a></h5>
+				<h6><a href="ListPages.html">159元 </a></h6>
+				<img src="http://img0.gjw.com/product/2015/0827/413bad8097434f1fa77f18ff16cdfbb4_1.jpg" />
+				
+			</li>
+			<li>
+				<h3><a href="ListPages.html">劲爆特卖 卖完涨价</a></h3>
+				<h5><a href="ListPages.html">52度 文君酒 500ml </a></h5>
+				<h6><a href="ListPages.html">258元</a></h6>
+				<img src="http://img0.gjw.com/product/2015/1118/ccb91fa43c5b44f586eaa86b73fd965c_1.jpg" />
+				
+			</li>
+			<li>
+				<h3><a href="ListPages.html">霸气双坛 好价直降</a></h3>
+				<h5><a href="ListPages.html">52度 泸州老窖 泸州贡酒Q9 1880ml*2</a></h5>
+				<h6><a href="ListPages.html">158元</a></h6>
+				<img src="http://img0.gjw.com/product/2016/0718/fe87e2f1585645d3945fbaa402003bfb_1.jpg" />
+			</li>
+		</ul>
+	</div>
+	<div class="img_list2_r"></div>
+</div><!--限时抢购-->
+
+<!--楼梯部分-->
+
+<!--一楼-->
+<div id="stair1" class="stair1">
+	<h3>
+		<span>1F</span><b>白酒馆</b>
+		<a href="ListPages.html">更多</a>
+	</h3>
+	<div class="stair1_l">
+		<div class="stair1_l_u"><img src="http://img0.gjw.com/Famous/2016/0822/08dbb70477e2476e8a0a09b1df3e6c84.jpg"/></div><!--end左上-->
+		<div class="stair1_l_m">
+			<ul>
+				<li><a href="ListPages.html">五粮液</a></li>
+				<li><a href="ListPages.html">高端收藏</a></li>
+				<li><a href="ListPages.html">茅台专场</a></li>
+				<li style="border:none;"><a href="ListPages.html">小酒迷情</a></li>
+				<li><a href="ListPages.html">陈年老酒</a></li>
+				<li><a href="ListPages.html">每周特卖</a></li>
+				<li><a href="ListPages.html">郎酒专场</a></li>
+				<li style="border:none;"><a href="ListPages.html">清仓专区</a></li>
+			</ul>
+		</div><!--end左中-->
+		<div class="stair1_l_d">
+			<img src="http://img0.gjw.com/Famous/2016/0825/3b779c040f4c44b0a6f0b544b59bf46c.jpg" />
+			<img src="http://img0.gjw.com/Famous/2016/0823/996891979bd84b2c9f2f4e62cb62cfa5.jpg" />
+		</div><!--end左下-->
+	</div><!--end一楼左-->
+	<div class="stair1_r"><!--右-->
+		<div class="stair1_r_u"><!--右上轮播图-->
+			<ul>
+				<li><img src="http://img0.gjw.com/Famous/2016/0603/28ba787887a84839bca2b42708f551cc.jpg"/></li>
+				<li><img src="http://img0.gjw.com/Famous/2016/0912/e9df1ee50b6c49809ecc4761fed2eb99.jpg"/></li>
+				<li><img src="http://img0.gjw.com/Famous/2016/0803/3672ae853ef84eb98e465fec601b5138.jpg"/></li>
+			</ul>
+			<p>
+				<span></span>
+				<span></span>
+				<span></span>
+			</p><!--end轮播图下标-->
+			<div class="stair1_r_u_btn_prev stair1_btn_com">&lt;</div><!--上一张-->
+			<div class="stair1_r_u_btn_next stair1_btn_com">&gt;</div><!--下一张-->
+		</div><!--end轮播图-->
+		<img src="http://img0.gjw.com/Famous/2016/0825/1d1198765ecf4adcb30fc4e2dfd4b836.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0908/6a2bf97fc9bf48c4afd52c2f7cfa5e48.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0902/6ded82ea71cc4dbd89ed3251180d2857.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0811/f6cb2d51001b42e5ae4c8053cf98bd84.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0902/6ded82ea71cc4dbd89ed3251180d2857.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0811/f6cb2d51001b42e5ae4c8053cf98bd84.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0823/1499fa3995c444e3a4785e6749c91e93.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0909/c23df81ba01345b8a41d38581311af6a.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0912/0f38a709b84e4ec1837a53daaa9c176a.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0823/f36f6f3855ec4465993ef81ac51255bb.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0912/0a48ca4c79164395919d392bcd757ac6.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0908/64623651ca684313b996bcbf8698d60e.jpg" />
+	</div><!--end一楼右-->
+</div><!--end一楼-->
+
+<!--二楼-->
+<div id="stair2" class="stair1">
+	<h3>
+		<span>2F</span><b>红酒馆</b>
+		<a href="ListPages.html">更多</a>
+	</h3>
+	<div class="stair1_l">
+		<div class="stair1_l_u"><img src="http://img0.gjw.com/Famous/2016/0909/130622e63c7543fcaec859a1ceb73a43.jpg"/></div><!--end左上-->
+		<div class="stair1_l_m">
+			<ul class="red_ul">
+				<li><a href="ListPages.html">拉菲专区 </a></li>
+				<li><a href="ListPages.html">红酒会馆</a></li>
+				<li><a href="ListPages.html">澳洲奔富</a></li>
+				<li style="border:none;"><a href="ListPages.html">加州乐事</a></li>
+				<li><a href="ListPages.html">酩悦香槟</a></li>
+				<li><a href="ListPages.html">黄尾袋鼠</a></li>
+				<li><a href="ListPages.html">卡斯特</a></li>
+				<li style="border:none;"><a href="ListPages.html">张裕专区</a></li>
+			</ul>
+		</div><!--end左中-->
+		<div class="stair1_l_d">
+			<img src="http://img0.gjw.com/Famous/2016/0912/b3155159e6d4454a9364af52d8e26a01.jpg" />
+			<img src="http://img0.gjw.com/Famous/2016/0808/90a3d57bf03742068cf73a233a5a8a8e.jpg" />
+		</div><!--end左下-->
+	</div><!--end二楼左-->
+	<div class="stair1_r"><!--右-->
+		<div class="stair1_r_u stair2_r_u"><!--右上轮播图-->
+			<ul>
+				<li><img src="http://img0.gjw.com/Famous/2016/0727/f136cd9c227743489267f516e36287d8.jpg"/></li>
+				<li><img src="http://img0.gjw.com/Famous/2015/1225/5754308fa81c4ae2b5762fdd1dfe9d5c.jpg"/></li>
+				<li><img src="http://img0.gjw.com/Famous/2016/0810/66ebade80c4645a7ab89c7ac628b0114.jpg"/></li>
+			</ul>
+			<p>
+				<span></span>
+				<span></span>
+				<span></span>
+			</p><!--end轮播图下标-->
+			<div class="stair1_r_u_btn_prev stair1_btn_com stair2_btn_com">&lt;</div><!--上一张-->
+			<div class="stair1_r_u_btn_next stair1_btn_com stair2_btn_com">&gt;</div><!--下一张-->
+		</div><!--end轮播图-->
+		<img src="http://img0.gjw.com/Famous/2016/0908/01a3778183db486c8503c08b0423262e.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0909/1ff3fc77ad5f44a384257269748bb926.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0902/6ded82ea71cc4dbd89ed3251180d2857.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0811/f6cb2d51001b42e5ae4c8053cf98bd84.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0905/c80fd31581384f3ab7893df93cb0a61f.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0912/561aa7cc08144eaeabc229d027adc202.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0725/0f91d6d40e574469b7a8cb223373168a.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0725/98aad36765af43ef8872f6422122bf89.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0725/b02ffec39468472cbc0adfc14628001e.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0620/54798608b09e4e68a3d34a77e5aed1e0.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0811/96f1c55ed74447e3a1dcd059d58ee77b.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0811/96f1c55ed74447e3a1dcd059d58ee77b.jpg" />
+	</div><!--end二楼右-->
+</div><!--end二楼-->
+
+<!--三楼-->
+<div id="stair3" class="stair1">
+	<h3>
+		<span>3F</span><b>洋酒馆</b>
+		<a href="ListPages.html">更多</a>
+	</h3>
+	<div class="stair1_l">
+		<div class="stair1_l_u"><img src="http://img0.gjw.com/Famous/2016/0503/f2d010cff40446deb25105fe02d19860.jpg"/></div><!--end左上-->
+		<div class="stair1_l_m">
+			<ul class="red_ul">
+				<li><a href="ListPages.html">芝华士</a></li>
+				<li><a href="ListPages.html">格兰菲迪</a></li>
+				<li><a href="ListPages.html">尊尼获加</a></li>
+				<li style="border:none;"><a href="ListPages.html">皇家礼炮</a></li>
+				<li><a href="ListPages.html">白兰地</a></li>
+				<li><a href="ListPages.html">伏特加</a></li>
+				<li><a href="ListPages.html">威士忌</a></li>
+				<li style="border:none;"><a href="ListPages.html">皇家路易</a></li>
+			</ul>
+		</div><!--end左中-->
+		<div class="stair1_l_d">
+			<img src="http://img0.gjw.com/Famous/2016/0810/c91b95c3941b4eada17612a146dbe9ce.jpg" />
+			<img src="http://img0.gjw.com/Famous/2016/0810/b31e0629c96f46ae8965bcee332bf013.jpg" />
+		</div><!--end左下-->
+	</div><!--end三楼左-->
+	<div class="stair1_r"><!--右-->
+		<div class="stair1_r_u stair3_r_u"><!--右上轮播图-->
+			<ul>
+				<li><img src="http://img0.gjw.com/Famous/2016/0803/2cbc3e5d292749aaac0d224c3eb4a2a3.jpg"/></li>
+				<li><img src="http://img0.gjw.com/Famous/2016/0607/0178d0a53e0a45618b92c58fb9ad09e9.jpg"/></li>
+				<li><img src="http://img0.gjw.com/Famous/2016/0607/67c5150637954ad088b6178be822fd27.jpg"/></li>
+			</ul>
+			<p>
+				<span></span>
+				<span></span>
+				<span></span>
+			</p><!--end轮播图下标-->
+			<div class="stair1_r_u_btn_prev stair1_btn_com stair3_btn_com">&lt;</div><!--上一张-->
+			<div class="stair1_r_u_btn_next stair1_btn_com stair3_btn_com">&gt;</div><!--下一张-->
+		</div><!--end轮播图-->
+		<img src="http://img0.gjw.com/Famous/2016/0503/d5bef287a28845f895c40e89e20200b2.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0912/e46a1cd1030e4c9c8f316b06b4daf4fc.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0902/6ded82ea71cc4dbd89ed3251180d2857.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0811/f6cb2d51001b42e5ae4c8053cf98bd84.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0810/f67c30b625da4de789500da2f5c4e00f.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0624/57db9a05590f41b08237ee56d24efdd1.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0525/e2ccca5a047a4a32a6d4cb65c51272da.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0912/f6d09a45972648e39cd4011133152c1b.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0808/028af71b23264e6ca0a930cd7dbdada2.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0803/e7c4aefad6c04d868a7f651937f5c446.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0803/c339d3eab1c9482f827fbfc0e45e5453.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0804/c3fc140c5d014b16851aa78702e58753.jpg" />
+	</div><!--end三楼右-->
+</div><!--end三楼-->
+
+<!--四楼-->
+<div id="stair4" class="stair1">
+	<h3>
+		<span>4F</span><b>黄酒·养生酒·啤酒·茶叶馆</b>
+		<a href="ListPages.html">更多</a>
+	</h3>
+	<div class="stair1_l">
+		<div class="stair1_l_u"><img src="http://img0.gjw.com/Famous/2016/0810/d652ca699a8f464e9be6d0a4a6d68718.jpg"/></div><!--end左上-->
+		<div class="stair1_l_m">
+			<ul class="red_ul">
+				<li><a href="ListPages.html">古越龙山</a></li>
+				<li><a href="ListPages.html">女儿红</a></li>
+				<li><a href="ListPages.html">啤酒专区</a></li>
+				<li style="border:none;"><a href="ListPages.html">养生酒</a></li>
+				<li><a href="ListPages.html">黄酒专区</a></li>
+				<li><a href="ListPages.html">茶叶专区</a></li>
+				<li><a href="ListPages.html">酒杯专区</a></li>
+				<li style="border:none;"><a href="ListPages.html">劲酒专区</a></li>
+			</ul>
+		</div><!--end左中-->
+		<div class="stair1_l_d">
+			<img src="http://img0.gjw.com/Famous/2016/0830/de5d14c91d0e45d1ac9fa29dde2fb04c.jpg" />
+			<img src="http://img0.gjw.com/Famous/2016/0912/bdb33adc4ef74c86a9037e77d7701078.jpg" />
+		</div><!--end左下-->
+	</div><!--end四楼左-->
+	<div class="stair1_r"><!--右-->
+		<div class="stair1_r_u stair4_r_u"><!--右上轮播图-->
+			<ul>
+				<li><img src="http://img0.gjw.com/Famous/2016/0810/91ce8100235244409de59828381ac194.jpg"/></li>
+				<li><img src="http://img0.gjw.com/Famous/2016/0810/398f714c1b2d4c4187dc3c2a9c3fb6e9.jpg"/></li>
+				<li><img src="http://img0.gjw.com/Famous/2016/0810/112f1ce5342249e7855c30f48f81d9bd.jpg"/></li>
+			</ul>
+			<p>
+				<span></span>
+				<span></span>
+				<span></span>
+			</p><!--end轮播图下标-->
+			<div class="stair1_r_u_btn_prev stair1_btn_com stair4_btn_com">&lt;</div><!--上一张-->
+			<div class="stair1_r_u_btn_next stair1_btn_com stair4_btn_com">&gt;</div><!--下一张-->
+		</div><!--end轮播图-->
+		<img src="http://img0.gjw.com/Famous/2016/0810/5c6a919c9bfa425a96ea3b948a312bd2.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0810/1382245f0a834f59884471ef01bcba88.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0902/6ded82ea71cc4dbd89ed3251180d2857.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0811/f6cb2d51001b42e5ae4c8053cf98bd84.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0810/cbe6bba6fc1f4ae481d24c469518ecc7.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0810/3babfd0ecb3e46a69d03770007295b1e.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0810/00e6691080874a23946c6c1619be1167.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0625/cdae0d7779d643caa81e91a5b59be653.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0810/f54a549110d64bfc88c1a5a8d0d59587.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0810/5f57150fc30d44ceac8a7b0bfd7700b6.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0810/ecc1920dab6246ccad3b3cc386751ea3.jpg" />
+		<img src="http://img0.gjw.com/Famous/2016/0810/0598e03a8cc04b7ab1365a1722fd7b80.jpg" />
+	</div><!--end四楼右-->
+</div><!--end四楼-->
+
+<!--五楼-->
+<div id="stair5" class="stair1">
+	<h3>
+		<span>5F</span><b>高端收藏</b>
+		<a href="ListPages.html">更多</a>
+	</h3>
+	<div class="stair5_d">
+		<div class="stair5_d_u">
+			<img class="stair5_d_u_img1" src="http://img0.gjw.com/Famous/2016/0725/ccb8abfd53cf433c85fdc6ef68acfd96.jpg"/>
+			<a href="ListPages.html"><img src="http://img0.gjw.com/Famous/2016/0722/87bfde622d3d4f3081ac4bcb492a7de6.jpg"/></a>
+			<a href="ListPages.html"><img src="http://img0.gjw.com/Famous/2016/0722/18dcf5175f6c4a07b947d4256efb9de3.jpg"/></a>
+			<a href="ListPages.html"><img src="http://img0.gjw.com/Famous/2016/0722/577bab2de954405ea57006ab336e157c.jpg"/></a>
+			<a href="ListPages.html"><img src="http://img0.gjw.com/Famous/2016/0722/795a57d7962444f0ab6b6d548f296020.jpg"/></a>
+		</div><!--五楼下的上-->
+		<div class="stair5_d_d">
+			<ul>
+				<li><a href="ListPages.html"><img src="http://img0.gjw.com/Famous/2016/0723/a5f40189f14c48c5b67ba57e3c261423.jpg"/></a></li>
+				<li><a href="ListPages.html"><img src="http://img0.gjw.com/Famous/2016/0723/e781eb228fd1461f9d4361da9ec4fc53.jpg"/></a></li>
+				<li><a href="ListPages.html"><img src="http://img0.gjw.com/Famous/2016/0723/63bb1a9279c24990a42b8ecd54602340.jpg"/></a></li>
+			</ul>
+		</div><!--end五楼下的下-->
+	</div><!--end五楼下-->
+</div><!--end五楼-->
+
+<!--六楼-->
+<div id="stair6" class="stair1" >
+	<h3>
+		<span>6F</span><b>品牌馆</b>
+		<a href="ListPages.html">更多</a>
+	</h3>
+	<div class="stair6_d"><!--六楼下部图片列表-->
+		
+		<ul>
+			<li><a href="ListPages.html"><img src="http://img0.gjw.com/Famous/2015/1019/bffc345bbdac4d7898028921247c4beb.jpg" /></a></li>
+			<li><a href="ListPages.html"><img src="http://img0.gjw.com/Famous/2015/1019/7ca4d84b9bd547348fb56abb14ba3165.jpg" /></a></li>
+			<li><a href="ListPages.html"><img src="http://img0.gjw.com/Famous/2015/1019/7af0a53d2320469fa4346c792810e35b.jpg" /></a></li>
+			<li><a href="ListPages.html"><img src="http://img0.gjw.com/Famous/2015/1019/4ca319eb32a344d8bff5172fbb0a914b.jpg" /></a></li>
+			<li><a href="ListPages.html"><img src="http://img0.gjw.com/Famous/2015/1019/05e8310e755e44499105e271e6b3a0ec.jpg" /></a></li>
+			
+			
+			<li><a href="ListPages.html"><img src="http://img0.gjw.com/Famous/2015/1019/3b4a3747672a43e9be3a87b921f3bf22.jpg" /></a></li>
+			<li><a href="ListPages.html"><img src="http://img0.gjw.com/Famous/2015/1019/aad2b4cf561b4be3a5ce2a1ab87c3878.jpg" /></a></li>
+			<li><a href="ListPages.html"><img src="http://img0.gjw.com/Famous/2015/1019/b2112e44d06a41a5b19eaa042e240fc6.jpg" /></a></li>
+			<li><a href="ListPages.html"><img src="http://img0.gjw.com/Famous/2015/1019/a8cbe67334ea4e6786bf76b96d321d56.jpg" /></a></li>
+			<li><a href="ListPages.html"><img src="http://img0.gjw.com/Famous/2015/1019/82b53d83f5764e8dba05bbc13f3329b5.jpg" /></a></li>
+			
+			
+			<li><a href="ListPages.html"><img src="http://img0.gjw.com/Famous/2015/1019/7eb7bdf6beea404080ab05a624780e87.jpg" /></a></li>
+			<li><a href="ListPages.html"><img src="http://img0.gjw.com/Famous/2015/1019/1d4024c442b047b4bbae9fc3185582f3.jpg" /></a></li>
+			<li><a href="ListPages.html"><img src="http://img0.gjw.com/Famous/2015/1019/b5cc1e93ff1c4960881b562a93d68353.jpg" /></a></li>
+			<li><a href="ListPages.html"><img src="http://img0.gjw.com/Famous/2015/1019/a2afc871f4904da39bb798c58ae4323d.jpg" /></a></li>
+			<li><a href="ListPages.html"><img src="http://img0.gjw.com/Famous/2015/1019/6727d1fc4b2f403aa8e5c2ddeff9b2c2.jpg" /></a></li>
+		</ul>
+	</div><!--end六楼下部图片列表-->
+</div><!--end六楼-->
+
+
+<!--左侧楼梯-->
+
+<div id="floor">
+	<ul>
+		<li><a href="#stair1">1F</a></li>
+		<li><a href="#stair2">2F</a></li>
+		<li><a href="#stair3">3F</a></li>
+		<li><a href="#stair4">4F</a></li>
+		<li><a href="#stair5">5F</a></li>
+		<li><a href="#stair6">6F</a></li>
+		<li><a href="#top">&lt;</a></li>
+	</ul>
+</div>
+
+<!--右侧栏-->
+<div id="right_mune">
+	<ul>
+		<li><a href="" class="right_mune_img1"></a></li>
+		<li  class="right_mune_car"><a href="ShoppingCart.html" class="right_mune_img2 goods_num"></a></li>
+		<li><a href="" class="right_mune_img3"></a></li>
+		<li><a href="" class="right_mune_img4"></a></li>
+		<li><a href="" class="right_mune_img5"></a></li>
+		<li><a href="" class="right_mune_img6"></a></li>
+		<li><a href="" class="right_mune_img7"></a></li>
+		<li class="right_mune_car"><a href="" class="right_mune_img8"></a></li>
+		<li class="back_top"><a href="" class="right_mune_img9"></a></li>
+	</ul>
+	<div id="right_mune_childrn">
+			<li>会员中心</li>
+			<li style="margin:28px 0 28px 0;">我的购物车</li>
+			<li>我的优惠券</li>
+			<li>我的收藏</li>
+			<li class="margin_right"><img src="http://www.gjw.com/v6/images/qrcode555_06.jpg"/></li>
+			<li class="margin_right"><img src="http://img0.gjw.com/Famous/2016/0216/5f835b3684ae40d19a737b1ed0754323.jpg"/></li>
+			<li>在线客服</li>
+			<li style="margin-top:66px;">用户反馈</li>
+			<li class="back_top">返回顶部</li>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--网页底部-->
+<div id="footer">
+	<div id="footer_up">
+		<div class="footer_up_u">
+			<div class="footer_up_u_l"></div>
+			<div class="footer_up_u_c">
+				<a href=""><img src="http://www.gjw.com/v6/images/onlineServ.png"/></a>
+			</div>
+			<div class="footer_up_u_r">
+				<p>超万平方米仓储体验店<br/>上海松江区茂盛路202弄18号<br/>客服邮箱：kf@goujiuwang.com<br/><strong>扫描二维码，掌握一手优惠资讯</strong></p>
+				<img src="http://www.gjw.com/v6/images/qrcode_06.jpg" />
+			</div>
+		</div>
+		<div class="footer_up_d">
+			<dl>
+				<dt>新手指南</dt>
+				<dd><a href="">用户协议</a></dd>
+				<dd><a href="">常见问题</a></dd>
+				<dd><a href="">网站购物流程</a></dd>
+				<dd><a href="">会员制度</a></dd>
+			</dl>
+			<dl>
+				<dt>如何付款</dt>
+				<dd><a href="">如何付款</a></dd>
+				<dd><a href="">发票制度说明</a></dd>
+				<dd><a href="">电子券说明</a></dd>
+				<dd><a href="">虚拟账户支付</a></dd>
+			</dl>
+			<dl>
+				<dt>配送方式</dt>
+				<dd><a href="">配送收费标准</a></dd>
+				<dd><a href="">配送时间</a></dd>
+				<dd><a href="">货到付款</a></dd>
+				<dd><a href="">支持城市</a></dd>
+				<dd><a href="">实体加盟服务商</a></dd>
+			</dl>
+			<dl>
+				<dt>售后服务</dt>
+				<dd><a href="">如何办理退换货</a></dd>
+				<dd><a href="">如何退换货</a></dd>
+				<dd><a href="">联系客服</a></dd>
+			</dl>
+			<dl>
+				<dt>关于我们</dt>
+				<dd><a href="DetailPages.html#sure">了解购酒网</a></dd>
+				<dd><a href="">招兵买马</a></dd>
+				<dd><a href="">联系我们</a></dd>
+				<dd><a href="">隐私声明</a></dd>
+				<dd><a href="">友情链接</a></dd>
+			</dl>
+			<dl class="footer_up_d_new">
+				<dt>合作共赢</dt>
+				<dd><a href="ListPages.html">品牌馆</a></dd>
+				<dd><a href="ListPages.html">大客户采购 new</a></dd>
+				<dd><a href="">网站推广 new</a></dd>
+				<dd><a href="">供应商供货 new</a></dd>
+			</dl>
+		</div>
+	</div>
+	<div id="footer_down">
+		<div class="footer_down_u"></div>
+		<div class="footer_down_d">
+			<p>Copyright® 2009-2016 gjw.com, All Rights Reserved 上海线加下电子商务有限公司 版权所有</p>
+			<div class="footer_down_d_a">
+				<a href="" class="footer_down_d_a1"></a>
+				<a href="" class="footer_down_d_a2"></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+<!--吸顶菜单-->
+<div id="set_top">
+	<img src="http://www.gjw.com/v6/images/whiteLogo.png" />
+	<div class="set_top_sousuo">
+		<input type="text" placeholder="请输入关键字" id="set_top_txt"/><input type="button" value="搜索" id="set_top_btn" />	
+	</div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

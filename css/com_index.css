@@ -1,0 +1,264 @@
+
+/*公共样式*/
+.red{color: red;}
+.blue{color:blue;font-size:20px;font-weight:600;}
+/*头部*/
+#top{
+	margin:0 auto;
+	width: 1200px;
+	height:30px;
+	background: #F7F7F7;
+	position: relative;
+	}
+#top .top_l{
+	position: absolute;
+	left:40px;
+	z-index: 2;
+	cursor: pointer;
+	}
+#top .top_l img{
+	width: 210px;
+	height: 210px;
+	display: none;}
+#top ul{
+	width:60%;
+	list-style: none;
+	position: absolute;
+	left:40%;top:10px}
+#top ul li{height: 12px;float: left;line-height:12px;padding:0 2%;border-left: 1px solid #ccc;font-size: 12px;}
+#top ul li .blue{color: #0066CB;}
+#top ul li .red{color: #c40000;}
+#top ul li .i{color: #c40000;font-style: italic;}
+#top ul li a{display: inline-block;height: 12px;font-size: 12px;}
+#top #top_user{display:none;width: 8%;height: 90px;position: absolute;left:56%;top: 24px;z-index: 2;text-align: center;}
+#top #top_user li{list-style: none;height: 30px;line-height: 30px;font-size: 12px;background: #f7f7f7;}
+#top #show_name{width:84px;overflow:hidden;white-space:nowrap;text-overflow: ellipsis;}
+
+
+/*头部图片*/
+
+#top_img{width:1200px;height:80px;margin:0 auto;position: relative;overflow: hidden;}
+#top_img a img{position: absolute;}
+#top_img .top_img_btn{background:#666666;width:18px;height:40px;color:#F7F7F7;font-size:14px;line-height:20px;text-align:center;position: absolute;right: 0px;top: 0;cursor: pointer;}
+/*头部提示*/
+
+#top_tip{width: 1200px;height:30px;margin:0 auto;background: #fff7d2;position: relative;}
+#top_tip .top_tip_btn{background: #FFF7D2;border: none;cursor: pointer;position: absolute;right: 15px;top: 8px;}
+
+/*导航条*/
+/*上左边*/
+#nav{width:1200px;height: 160px;margin:0 auto;}
+#nav_up{height:120px;position: relative;}
+#nav_up .nav_up_l{width:400px;position:absolute;}
+#nav_up .nav_up_l .nav_up_l_img1{widtwidth:740px;height:38px;h:200px;height:53px;position: absolute;top:40px}
+#nav_up .nav_up_l .nav_up_l_img2{width:142px;height:67px;position: absolute;left:220px;top:30px;}
+/*上中间*/
+#nav_up .nav_up_c{width:540px;height:120px;position:absolute;left:410px;}
+#nav_up .nav_up_c input{width: 450px;height: 34px;border:2px solid #c40000;background:#fff;position:absolute;top:34px;}
+#nav_up .nav_up_c span{display:inline-block;width:84px;height:38px;background:#C40000;color:#fff;font-size:16px;line-height:38px;text-align: center;position:absolute;left:452px;top:34px;cursor: pointer;}
+#nav_up .nav_up_c ul{position: absolute;top:80px;}
+#nav_up .nav_up_c ul li{height:20px;border-right:1px solid #666666;padding:0 10px 0 9px;line-height:20px;float:left;}
+#nav_up .nav_up_c ul li a{color:#C40000;}
+/*上右边*/
+#nav_up .nav_up_r{position:absolute;right:0;top:34px}/*购物车*/
+#nav_up .nav_up_r .shopping_car{width:140px;height:40px;border:1px solid #dfdfdf;line-height:40px;text-align:center;background:#F7F7F7;}
+#nav_up .nav_up_r .shopping_car:hover{background:#fff;}
+
+
+#nav_up .nav_up_r .shopping_car a span{display:inline-block;width:20px;height:18px;vertical-align:middle;background:url(../img/shopping_car1.png) no-repeat;}
+#nav_up .nav_up_r .shopping_tip{display:none;width:310px;min-height:64px;height:auto;line-height:64px;position:absolute;right:0;top:38px; background:#fff;padding-left:10px;font-size:14px;z-index:5;-webkit-transition:all 0.5s ease-in-out;
+								-moz-transition:all 1s ease-in-out;}
+#nav_up .nav_up_r .shopping_tip:hover{transform:scale(1);box-shadow: -2px 2px 5px #b6b6b6;}
+#nav_up .nav_up_r .shopping_tip span{display:inline-block;width:50px;height:50px;background:#fff url(../img/shopping_car2.png) no-repeat;vertical-align:middle;}
+#nav_up .nav_up_r .shopping_tip .Del{cursor: pointer;}
+#goods_num{font-size:18px;color:red;}
+
+#add_goods dl dt{width:50px;height: 50px;float: left;vertical-align: middle;}
+#add_goods dl dt img{width:50px;height: 50px;}
+#add_goods dl dd{width:240px;height: 50px;float:left;line-height:50px;}
+#add_goods dl dd a{display:inline-block;width:100px;overflow: hidden;white-space:nowrap;text-overflow:ellipsis;}
+#add_goods dl dd b{color:red;float:right;margin-right:20px;}
+#add_goods dl dd strong{color:red;font-size:10px;float: right;font-size:16px;}
+
+/*下左*/
+#nav_down{height:38px;position:relative;}
+#nav_down .nav_down_l{width:210px;height:38px;text-align:center;line-height:38px;background:#C40000;color:#fff;font-size:16px;font-weight:800;}
+/*下中*/
+#nav_down .nav_down_c{width:740px;height:38px;position:absolute;left:234px;top:12px}
+#nav_down .nav_down_c li{padding-right:50px;float: left;}
+#nav_down .nav_down_c li a{font-size:16px;font-weight:800;color:#333333}
+#nav_down .nav_down_c li a:hover{color:#C40000;}
+/*下右*/
+#nav_down .nav_down_r{position:absolute;right:0;top:0}
+
+
+/*主题图-大轮播*/
+#banner{width:1200px;height:455px;margin:0 auto;position:relative;cursor:pointer;border:2px solid #C81623;border-left:none;border-right:none;}
+#banner .banner_lunbo{height:455px;position:absolute;}
+#banner .banner_lunbo li{height:455px;position:absolute;}
+#banner .banner_lunbo li img{width:1200px;height:455px;}
+#banner p{width:230px;position:absolute;bottom:10px;left:500px;z-index: 2;}
+#banner p span{display:inline-block;width: 20px;height:20px;border-radius:100%;text-align: center;line-height: 20px;color: #fff;background: #666666;cursor:pointer;}
+
+
+
+/*侧栏菜单*/
+#mune{width: 210px;height:450px;position: absolute;left:0px;top:-5px;z-index: 3;}
+#mune .mune_car,#mune .mune_grape,#mune .mune_tea,#mune .mune_white,#mune .mune_yang,#mune .mune_yellow{width:196px;height:83px;background:#c81623;padding:0 7px;}
+ 
+#mune .mune_com{background:#fff;} /*划过变色*/
+#mune .mune_com a{color:#000;}
+#mune .mune_com .com{border-radius: 15%;background:#C40000;color:#fff;} /*划过变色*/
+#mune .com{border-radius: 15%;background:#fff;color:#c40000;}
+#mune h3 a{color: #FFF;}
+#mune h3 span{float: right;color: #fff;}
+#mune li{float: left;margin:0 7px 0 0;}
+#mune li a{color:#fff;}
+#mune .mune_tea{height:43px;}
+/*白酒子菜单*/
+#white_mune{display:none;width:1020px;height:455px;position:absolute;left:17.5%;z-index: 5;background:#fff;}
+#white_mune li{float: left;}
+ .white_mune_left{width:710px;height:410px;padding:20px;float:left;}
+ .white_mune_right{width:248px;height:450px;float:right;border-left:1px solid #CCC;}
+ .white_mune_left .white_mune_left_up{width: 710px;height: 55px;}
+ .white_mune_left .white_mune_left_up li{height:24px;margin-right:12px;text-align: center;background:#666;}
+ .white_mune_left .white_mune_left_up li a{color:#fff;}
+ .white_mune_left .white_mune_left_up li span{display:inline-block;width:24px;height:24px;text-align: center;line-height: 24px;background:#333;color:#fff;}
+ 
+ 
+ .white_mune_left .white_mune_left_center{width:695px;height:240px;}
+ .white_mune_left .white_mune_left_center h4{width:695px;height:28px;line-height:28px;border-bottom:1px solid #333;}
+ .white_mune_left .white_mune_left_center li{width:76px;height:24px;line-height:24px;text-align:left;}
+ .white_mune_left .white_mune_left_center li a{font-size:12px;}
+ .white_mune_left .white_mune_left_down .left_down_left{width:450px;height: 110px;float:left;}
+ .white_mune_left .white_mune_left_down .left_down_right{width:230px;height: 110px;float: right;}
+ .white_mune_left .white_mune_left_down li{width:76px;height:24px;line-height:24px;text-align:left;}
+ .white_mune_left .white_mune_left_down .left_down_left h4{width:420px;height: 28px;border-bottom:1px solid #333;}
+ .white_mune_left .white_mune_left_down .left_down_right h4{width:230px;height: 28px;border-bottom:1px solid #333;}
+ .white_mune_left .white_mune_left_down li a{font-size:12px;}
+
+ .white_mune_right  img{width:244px;height:223px;border-bottom:1px solid #CCC;}/*白酒子页end*/
+
+/*葡萄酒子页，洋酒，黄酒*/
+#grape_mune,#froeign_mune,#yellow_mune{display:none;width:1020px;height:455px;position:absolute;left:17.5%;z-index: 4;background:#fff;}
+#grape_mune li,#froeign_mune li,#yellow_mune li{float: left;}
+
+/*葡萄酒子页*/
+#grape_mune .grape_mune_left_c{width:710px;height:120px;}
+#grape_mune .grape_mune_left_c ul{width:220px;height:120px;margin-right:10px;float:left;}
+#grape_mune .grape_mune_left_c ul h3{width:100%;height:26px;line-height:25px;border-bottom:1px solid #333;}
+#grape_mune .grape_mune_left_c ul li{width:52px;height:24px;line-height:24px;text-align:left;}
+#grape_mune .grape_mune_left_c ul li a{font-size:12px;}
+
+#grape_mune .grape_mune_left_d ul{width:710px;height:200px;}
+#grape_mune .grape_mune_left_d ul li a{font-size:12px;}
+#grape_mune .grape_mune_left_d ul li{overflow:hidden;width:52px;white-space:nowrap;text-overflow:ellipsis;height:24px;line-height:24px;text-align:left;margin-right:5px;}
+#grape_mune .grape_mune_left_d ul h3{width:100%;height:26px;line-height:25px;border-bottom:1px solid #333;}
+
+/*洋酒子页*/
+
+#froeign_mune .froeign_left_center{height:176px;}
+#froeign_mune .froeign_left_down{height:200px;}
+#froeign_mune .froeign_left_down .froeign_left_down_l{height:200px;width:220px;float:left;}
+#froeign_mune .froeign_left_down .froeign_left_down_l ul{height:100px;width:220px;}
+#froeign_mune .froeign_left_down .froeign_left_down_l ul li{overflow:hidden;width:52px;white-space:nowrap;text-overflow:ellipsis;}
+#froeign_mune .froeign_left_down .froeign_left_down_l ul h4{width:220px;}
+#froeign_mune .froeign_left_down .froeign_left_down_r{height:200px;width:460px;float:left;text-align:center;}
+
+/*黄酒子页*/
+
+#yellow_mune .yellow_mune_l ul{width:216px;height:95px;float:left ;margin:20px 10px 0 0;}
+#yellow_mune .yellow_mune_l ul h4{width:100%;height:26px;line-height:25px;border-bottom:1px solid #333;}
+#yellow_mune .yellow_mune_l ul li{overflow:hidden;width:50px;white-space:nowrap;text-overflow:ellipsis;height:24px;line-height:24px;text-align:left;margin-right:2px;font-size:12px;}
+
+
+
+
+/*活动右侧图片*/
+
+#banner_right{width:190px;height:429px;position: absolute;right:0px;top:0px;cursor: pointer;z-index: 3;}
+
+
+/*网站底部*/
+
+#footer{width:100%;height:540px;margin:0 auto;}
+#footer #footer_up{width: 100%;height:340px;background:#404040;position:relative;}
+#footer #footer_up .footer_up_u{height:110px;}
+#footer #footer_up .footer_up_u_l{width:300px;height:75px;margin-top:20px;background:url(http://www.gjw.com/v6/images/tel.png) no-repeat left top;position:absolute;left:60px;}
+#footer #footer_up .footer_up_u_c{width:176px;height:32px;position: absolute;left:380px;top:60px;}
+#footer #footer_up .footer_up_u_r{width:300px;height:110px;position: absolute;right:35px;}
+#footer #footer_up .footer_up_u_r img{width:104px;height:104px;float: right;}
+#footer #footer_up .footer_up_u_r p{display:inline-block;float:left;font-size:12px;color:#fff;text-align:right;}
+
+#footer #footer_up .footer_up_d{width: 1050px;height:230px;border-top:2px solid #787878;margin:0 auto;padding:40px 0 0 100px;}
+#footer #footer_up .footer_up_d dl{width:170px;height:150px;float:left;}
+#footer #footer_up .footer_up_d dl dt{font-size:14px;font-weight:600;color: #fff;}
+#footer #footer_up .footer_up_d dl dd a{font-size:12px;color: #a9a9a9;text-align:left;line-height:24px;}
+#footer #footer_up .footer_up_d .footer_up_d_new a{color:#ffff1b;}
+
+#footer #footer_down{width:100%;height:180px;background:#fff;}
+#footer #footer_down .footer_down_u{width: 1117px;height:84px;margin:0 auto;background:url(http://www.gjw.com/v6/images/baozheng_06.jpg) no-repeat center top;}
+#footer #footer_down .footer_down_d p{width:520px;height:12px;font-size:12px;margin:0 auto;}
+#footer #footer_down .footer_down_d .footer_down_d_a{width:250px;height:48px;margin:20px auto 0;}
+#footer #footer_down .footer_down_d .footer_down_d_a1{display:inline-block;width:110px;height:48px;background:url(http://www.gjw.com/v6/images/aut_06.jpg) no-repeat;}
+#footer #footer_down .footer_down_d .footer_down_d_a2{display:inline-block;width:110px;height:48px;background:url(http://www.gjw.com/v6/images/aut_06.jpg) no-repeat;background-position:-120px 0;margin-left:10px;}
+
+
+/*右侧菜单*/
+
+#right_mune{width:30px;height:700px;background:#eaeaea;position: fixed;right:50%;top:0;margin-right: -634px;
+z-index:6;text-align:center;padding:100px 0 0 4px;}
+#right_mune ul li{width:26px;height:40px;border-bottom:1px solid #c8c8c8;}
+#right_mune .right_mune_car{height:94px;}
+
+#right_mune .right_mune_img1{display:block;width:26px;height:31px;background:url(../img/images/ycl_1.png) no-repeat;}
+#right_mune .right_mune_img2{
+	display:block;width:26px;
+	height:90px;color:red;
+	font-size:18px;
+	font-weight:800;
+	background:url(../img/images/ycl_2.png) no-repeat;}
+#right_mune .right_mune_img3{display:block;width:26px;height:36px;background:url(../img/images/ycl_3.png) no-repeat;}
+#right_mune .right_mune_img4{display:block;width:26px;height:36px;background:url(../img/images/ycl_4.png) no-repeat;}
+#right_mune .right_mune_img5{display:block;width:26px;height:36px;background:url(../img/images/ycl_5.png) no-repeat;}
+#right_mune .right_mune_img6{display:block;width:26px;height:36px;background:url(../img/images/ycl_6.png) no-repeat;}
+#right_mune .right_mune_img7{display:block;width:26px;height:36px;background:url(../img/images/ycl_7.png) no-repeat;}
+#right_mune .right_mune_img8{display:block;width:26px;height:90px;background:url(../img/images/ycl_8.png) no-repeat;background-position:center bottom;}
+#right_mune .right_mune_img9{display:block;width:26px;height:36px;background:url(../img/images/ycl_9.png) no-repeat;}
+
+#right_mune_childrn{width:210px;height:500px;position:fixed;right:30px;top:100px;list-style:none;z-index:0;display:none;}
+#right_mune_childrn li{width:110px;line-height:40px;height:40px;background:#737373;color:#fff;position:relative;left: 0;opacity:0;cursor:pointer;z-index:0;}
+#right_mune_childrn .margin_right{margin-left:-95px;}
+
+
+
+/*吸顶菜单*/
+#set_top{width:100%;height:50px;background:#C81623;margin:0 auto;position:fixed;top:0;z-index:5;display: none;}
+#set_top img{width: 262px;height: 40px;position:absolute;left: 30px;}
+#set_top .set_top_sousuo{width:660px;height:32px;margin:9px auto 0;}
+#set_top #set_top_txt{width: 588px;height: 32px;background:#fff;border:none;}
+#set_top #set_top_btn{width:70px;height: 32px;text-align: center;background:#C40000;color:#fff;font-size:18px;border:none;}
+
+
+/*楼梯*/
+
+#floor{display:none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/ShoppingCart.css" />
+	<script type="text/javascript" src="js/jquery-1.11.3.js" ></script>
+	<script type="text/javascript" src="js/jquery.cookie.js" ></script>
+	<script type="text/javascript" src="js/ShoppingCart.js" ></script>
+</head>
+<body>
+	
+<!--网页头部-->
+<div id="top">
+		<div class="top_l">
+			<div style="border:none">
+				<a href="login.html" class="blue">登录</a><span></span>
+				<a href="Registe.html" class="blue">注册</a>
+			</div>
+		</div>
+		<ul> 
+			<li style="border:none">&emsp;&emsp;
+				<a href="" class="blue">&emsp;</a><span>&emsp;</span>
+				<a href="" class="blue">&emsp;</a>
+			</li>
+			<li><a href="">购物车&emsp;&or;</a></li>
+			<li><a href="">我的订单</a></li>
+			<li><a href="">用户中心&emsp;&or;</a></li>
+			<li><a href="">帮助</a></li>
+			<li><a href="" class="red">提意见</a></li>
+			<li><a href="" class="red">微博</li>
+		</ul>
+		<!--用户中心子菜单-->
+		<div id="top_user">
+			<li><a href="">商品评论</a></li>
+			<li><a href="">收藏夹</a></li>
+			<li><a href="">我的电子券</a></li>
+		</div>
+</div><!--end头部-->
+	
+<!--主体内容-->	
+	
+<div id="content">
+	<div class="My_shopping">
+		<h1>我的购物车<span>单笔订单满100元免运费（香港、澳门、台湾、钓鱼岛地区和拆分订单除外）</span></h1>
+		<input type="submit" value="￥去结算" class="input_com input_1"/>
+	</div>	
+	<div class="shopping_box">
+		<ul>
+			<li><input type="checkbox" name="QX">全选</li>
+			<li style="width:280px;">商品</li>
+			<li>单价</li>
+			<li>优惠</li>
+			<li style="width:160px;">数量</li>
+			<li>小计</li>
+			<li>操作</li>
+		</ul>
+		<div class="list_box" ><!--列表外层盒子-->
+			<div id="list_box"><!--列表盒子-->
+				<!--<table>//一件商品
+					<tr>
+						<td><input type="checkbox" name="all"/></td>
+						<td class="gName"><img src="http://img0.gjw.com/product/2016/0811/f15af99e3d5147d7a59014f7f678775c_0.jpg" /><p class="goods_name">五粮液</p></td>
+						<td>￥<span class="goods_price">240</span></td>
+						<td>-</td>
+						<td class="add_reduce"><span>+</span><b>1</b><span>-</span></td>
+						<td class="red">￥<span class="all_price s_money">240</span></td>
+						<td class="operate"><span>收藏</span>&emsp;<span class="del">删除</span></td>
+					</tr>
+				</table>-->
+			</div><!--列表盒子-->
+			<div class="coupon"><p>电子券在“去结算”页面中使用</p></div>
+			<div class="all_btn"><!--删除-清空-->
+				<input type="checkbox" name="QX" /><span>全选</span>
+				<span class="check_goods">删除选中商品</span>
+				<span class="all_goods">清空购物车</span>
+				<b class="all_money">应付商品金额：<span class="money">1324</span></b>
+			</div>
+		</div><!--end列表外层盒子-->
+	</div>
+	<div class="goOn">
+			<a href="ListPages.html" class="goOn_a">继续购物&gt;</a>&emsp;&emsp;商品价格和库存请以订单提交时为准
+			<input type="submit" value="￥去结算" class="input_com input_1"/>
+	</div>
+	<div class="other_goods" id="other_goods">
+		<h3>你可能还需要</h3>
+		<dl>
+			<dt><img src="http://img0.gjw.com/product/2016/0914/12396bce0de44640977f54a558920f39_1.jpg"/></dt>
+			<dd>53度 茅台 飞天带杯（2016年产）500ml<span class="red"></span></dd>
+			<dd ></dd>
+			<dd class="red">¥999</dd>
+			<li><a href="" class="add_car shopping_tocar">加入购物车</a></li>
+		</dl>
+	</div>
+</div><!--end主体-->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<!--网页底部-->	
+<div id="footer_down">
+		<div class="footer_down_u"></div>
+		<div class="footer_down_d">
+			<p class="footer_down_d_p1">
+				<a>关于我们</a> | <a>联系我们</a> | <a>友情链接 </a>| <a>隐私声明</a>
+			</p>
+			<p>Copyright® 2009-2016 gjw.com, All Rights Reserved 上海线加下电子商务有限公司 版权所有</p>
+			<div class="footer_down_d_a">
+				<a href="" class="footer_down_d_a1"></a>
+				<a href="" class="footer_down_d_a2"></a>
+			</div>
+		</div>
+</div>
+</body>
+</html>

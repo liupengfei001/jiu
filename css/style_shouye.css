@@ -1,0 +1,226 @@
+/*图片列表1*/
+#img_list1{width:1200px;height:170px;margin:0 auto;position:relative;}
+#img_list1 #img_list1_l{width:200px;height:150px;position:absolute;left:0;}
+#img_list1 #img_list1_r{width:990px;height:170px;position:absolute;right:0}
+#img_list1 #img_list1_r .ul1{width:990px;height:170px;position:absolute;left:0;top:0;}
+#img_list1 #img_list1_r .ul2{width:990px;height:170px;position:absolute;left:990px;top:0;}
+#img_list1 #img_list1_r ul li{float:left;}
+#img_list1 #img_list1_r ul li img{width:245px;height:170px;padding-left:2px;cursor:pointer;}
+
+/*按钮*/
+#img_list1 #img_list1_r .com_style{display:none;width:30px;height:60px;background:#666;z-index:6;line-height:60px;text-align:center;color:#fff;font-size:24px;cursor: pointer;}
+#img_list1 #img_list1_r .prev{position:absolute;left:0;top:50px;}
+#img_list1 #img_list1_r .next{position:absolute;right:0px;top:50px;}
+
+
+
+
+
+
+
+/*购酒推荐——限时特惠*/
+#img_list2{width:1200px;height:430px;margin:0 auto;position:relative;}
+#img_list2 h2{height:20px;width:1200;font-size:18px;color:#515151;}
+#img_list2 h2 span{display:inline-block;width:60px;text-align:right;font-size:12px;color:#bcadbe;}
+#img_list2 .img_list2_l{width:240px;height:400px;position:absolute;left:0;top:26px;background:url(http://img0.gjw.com/Famous/2016/0909/50c04935636e455499a0b0970331fd87.jpg) no-repeat;background-size:cover;cursor:pointer;}
+#img_list2 .img_list2_c{width:720px;height:400px;position:absolute;left:240px;top:26px;}
+#img_list2 .img_list2_c ul{width:100%;height:100%;}
+#img_list2 .img_list2_c ul li{width:239px;height:198px;float:left;text-align:center;}
+#img_list2 .img_list2_c ul li h3{width:238px;height:36px;line-height:36px;font-size:18px;text-align:center;color:#000;}
+#img_list2 .img_list2_c ul li h3 a:hover{color:#FF0421;}
+#img_list2 .img_list2_c ul li h5{width:238px;height:22px;line-height:22px;font-size:12px;text-align:center;color:#000;}
+#img_list2 .img_list2_c ul li h6{width:60px;height:20px;line-height:20px;font-size:8px;text-align:center;color:#fff;border-radius:15%;background:#f10;margin:0 auto;}
+#img_list2 .img_list2_c ul li h6 a{color:#fff;}
+#img_list2 .img_list2_c ul li img{width:100px;height:100px;margin:0 auto;-webkit-transition:all 0.5s ease-in-out;-moz-transition:all 1s ease-in-out;cursor:pointer;}
+#img_list2 .img_list2_c ul li img:hover{transform:translateX(-20px);}
+
+#img_list2 .img_list2_r{width:240px;height:400px;position:absolute;right:0;top:26px;background:url(http://img0.gjw.com/Famous/2016/0909/e91cc3fdc0fd43979954d9bb65c5ccda.jpg) no-repeat;background-size:cover;cursor:pointer;}
+
+
+/*楼梯*/
+
+/*一楼*/
+
+.stair1{width:1200px;height: 770px;margin:0 auto;position:relative;}
+.stair1 h3{width:1200px;height:40px;line-height:40px;border-bottom:1px solid #d00d0f;}
+.stair1 h3 span{display:inline-block;width:28px;height:22px;background:#d00d0f;color:#fff;font-size:9px;line-height:22px;text-align:center;}
+.stair1 h3 b{font-size:16px;color:#666;}
+.stair1 h3 a{display:inline-block;width:30px;height:40px;line-height:40px;color:#333;float:right;margin-right:18px;}
+/*左*/
+.stair1 .stair1_l{width:310px;height:710px;}
+.stair1 .stair1_l .stair1_l_u{width:310px;height:240px;cursor:pointer;}
+.stair1 .stair1_l .stair1_l_m{width:310px;height:90px;background:#fff6e5;}
+.stair1 .stair1_l .stair1_l_m ul{width:310px;height:90px;}
+.stair1 .stair1_l .stair1_l_m ul li{width:76px;height:18px;margin-top:12px;text-align:center;line-height:18px;border-right:1px solid #ac6f05;float:left;}
+.stair1 .stair1_l .stair1_l_m ul li a{color:#AC6F05;font-size:12px;}
+.stair1 .stair1_l .stair1_l_d{width:310px;height:380px;cursor:pointer;}
+/*右*/
+.stair1 .stair1_r{width:885px;height:710px;position:absolute;right:0px;top:41px}
+.stair1 .stair1_r .stair1_r_u{width:440px;height:240px;position:absolute;left:0;top:0px;overflow:hidden;}
+.stair1 .stair1_r .stair1_r_u ul{}
+.stair1 .stair1_r .stair1_r_u ul li img{width:440px;height:240px;position: absolute;cursor:pointer;}
+.stair1 .stair1_r .stair1_r_u p{width:70px;text-align:center;position: absolute;bottom:10px;left:170px;z-index:2;}
+.stair1 .stair1_r .stair1_r_u p span{display:inline-block;width:10px;height:10px;border-radius:100%;background:#3e3e3e;margin-left:8px;cursor:pointer;}
+.stair1 .stair1_r .stair1_btn_com{width:26px;height:60px;background:#bfbfbf;text-align:center;line-height:60px;font-size:30px;color:#fff;cursor:pointer;}
+.stair1_r_u_btn_prev{position:absolute;left:0;top:90px;}
+.stair1_r_u_btn_next{position:absolute;right:0;top:90px;}
+
+
+
+.stair1 .stair1_r img{width:220px;height:240px;float:right;border:1px solid #dddddd;border-left:none;border-top:none;cursor:pointer;}
+
+
+
+/*二楼*/
+
+#stair2 .red_ul li{border-right:1px solid #340645;}
+#stair2 .red_ul li a{color:#340645;}
+
+/*五楼*/
+
+#stair5{width:1200px;height:440px;position:relative;margin:0 auto;}
+#stair5 .stair5_d{width:1200px;height:400px;position:absolute;top:41px;}
+#stair5 .stair5_d .stair5_d_u{height:240px;}
+#stair5 .stair5_d .stair5_d_u .stair5_d_u_img1{width:240px;height:240px;}
+#stair5 .stair5_d .stair5_d_u a{display:inline-block;width:238px;height:240px;margin-left:2px;float:right;margin-top:30px;}
+#stair5 .stair5_d .stair5_d_d{height:130px;line-height:130px;}
+#stair5 .stair5_d .stair5_d_d ul li{float:left;}
+
+
+/*六楼*/
+
+#stair6{width:1200px;height:410px;position:relative;margin:0 auto;}
+#stair6 .stair6_d{width:1200px;height:380px;position:absolute;top:40px;border:1px solid #dddddd;border-top:none;}
+#stair6 .stair6_d ul li{float:left;width:220px;height:106px;margin:15px 0 0 16px;overflow:hidden;}
+#stair6 .stair6_d ul li a{}
+#stair6 .stair6_d ul li a img{-webkit-transition:all 0.3s ease-in-out;-moz-transition:all 0.5s ease-in-out;}
+#stair6 .stair6_d ul li a img:hover{transform:translateX(-150px);}
+
+
+/*左侧楼梯*/
+
+#floor{
+	width:30px;
+	position:fixed;
+	left:50%;
+	margin-left:-630px;
+	top:200px;
+	display:none;}
+	
+#floor ul li{
+	width:20px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	font-size:12px;
+	background:#FAFAFA;
+	color:#B6B6B6;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

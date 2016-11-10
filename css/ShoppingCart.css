@@ -1,0 +1,295 @@
+
+/*公用样式*/
+.red{color: #c40000;}
+.input_com{
+	width:120px;
+	height:35px;
+	background:#DC0202;
+	color:#fff;
+	border:none;
+	border-radius:10px;
+	position:absolute;
+	right:0;top: 13px;
+	cursor:pointer;}
+
+
+#top{
+	margin:0 auto;
+	width: 1200px;
+	height:30px;
+	background: #F7F7F7;
+	position: relative;
+	}
+#top .top_l{
+	position: absolute;
+	left:40px;
+	z-index: 2;
+	cursor: pointer;
+	}
+#top .top_l img{
+	width: 210px;
+	height: 210px;
+	display: none;}
+#top ul{
+	list-style: none;
+	position: absolute;
+	left:480px;
+	top:10px}
+#top ul li{
+	height: 12px;
+	float: left;
+	line-height:12px;
+	padding:0 21px 0 20px;
+	border-left: 1px solid #ccc;
+	font-size: 12px;}
+#top ul li .blue{color: #0066CB;}
+
+#top ul li a{
+	display: inline-block;
+	height: 12px;
+	font-size: 12px;}
+#top #top_user{
+	display:none;
+	width: 108px;
+	height: 90px;
+	position: absolute;
+	left:58%;
+	top: 24px;
+	z-index: 2;
+	text-align: center;}
+#top #top_user li{
+	list-style: none;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	background: #f7f7f7;}
+
+
+
+#top{border-bottom:1px solid #C8C8C8 ;}
+#top #top_user{left:64%;}
+
+#top ul li{border:none;}
+
+
+/*主体内容*/
+
+#content{width:960px;height: auto;margin:0 auto;}
+#content .My_shopping{
+	width:960px;
+	height:60px;
+	border-bottom:2px solid #C90809;
+	position:relative;}
+#content .My_shopping h1{
+	width:700px;
+	font-size:18px;
+	position: absolute;
+	bottom:2px;}
+#content .My_shopping h1 span{font-size:12px;color:#DC0202;}
+
+
+
+#content .shopping_box{
+	width:960px;
+	height: auto;
+	border:1px solid #C8C8C8;
+	border-top: none;}
+#content .shopping_box ul{
+	width:auto;
+	height:36px;
+	line-height:36px;
+	border-bottom:1px solid #C8C8C8;}
+	
+#content .shopping_box ul li{
+	width:100px;
+	height:30px;
+	float:left;
+	text-align:center;
+	line-height:30px;}
+
+#list_box table{
+	width:930px;
+	height:70px;
+	margin:0 auto;
+	border-bottom:1px dashed #C8C8C8;}
+#list_box table tr .gName{
+	width: 220px;
+	text-align:left;}
+#list_box table tr .gName img{
+	width:46px;
+	height:46px;
+	vertical-align:middle;}
+#list_box table tr .gName p{
+	width:180px;
+	display:inline-block;
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;}
+
+#list_box table tr td{width:100px;text-align:center;}
+
+#list_box table tr .add_reduce span{
+	display:inline-block;
+	width:16px;
+	height:20px;
+	border:1px solid #CCCCCC;
+	cursor:pointer;}
+#list_box table tr .add_reduce b{
+	display:inline-block;
+	width:30px;
+	height:20px;
+	border:1px solid #CCCCCC;
+	margin:3px;}
+	
+#list_box .operate span:hover{
+	color:#CC0000;
+	text-decoration:underline;
+	cursor:pointer;}
+.list_box .coupon{
+	height:44px;
+	line-height:44px;
+	padding-left:30px;
+	border-top:1px solid #C8C8C8;
+	border-bottom:1px solid #ccc;
+	background:#F6F6F6;}
+
+.list_box .all_btn{
+	height:50px;
+	line-height:50px;
+	padding-left:30px;}
+
+.list_box .all_btn span{
+	display:inline-block;
+	margin-right: 20px;
+	cursor: pointer;}
+
+.list_box .all_btn b{
+	display:inline-block;
+	float:right;}
+	
+.list_box .all_btn b span{
+	font-size:24px;
+	font-weight:900;
+	color: #C40000;}
+
+.goOn{
+	width:960px;
+	height:80px;
+	line-height:80px;
+	position: relative;}
+
+.goOn .goOn_a{
+	display:inline-block;
+	width: 80px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	border:1px solid #CCCCCC;}
+
+
+/*其他商品*/
+
+.other_goods{
+	width:960px;
+	height:560px;
+	margin:0 auto;
+	border:1px solid #CCCCCC;}
+.other_goods h3{
+	height:40px;
+	padding-left:30px;
+	line-height:40px;
+	background:#F8F8F8;
+	border-bottom:1px solid #ccc;
+	color:#999;
+	font-size:20px;}
+
+.other_goods dl{
+	width:16.5%;
+	height:230px;
+	border-right:1px dashed #EAEAEA;
+	float:left;
+	margin-top:10px;
+	text-align: center;}
+	
+.other_goods dt img{
+	width:100px;
+	height:100px;
+	-webkit-transition:all 0.5s ease-in-out;
+	-moz-transition:all 1s ease-in-out;}
+.other_goods dt img:hover{
+	transform:scale(1.5);
+	box-shadow: 2px 2px 5px #b6b6b6;}
+	
+.other_goods dl dd{
+	text-align:center;
+	line-height:20px;
+	font-size:12px;
+	width:150px;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;}
+
+.other_goods dl li{
+	display:inline-block;
+	list-style:none;
+	width:75px;
+	height:20px;
+	line-height:20px;
+	text-align:center;
+	border:1px solid #ccc;
+	padding-left:25px;
+	background: url(../img/shopping_car1.png) no-repeat left center;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*网页底部*/
+ #footer_down{
+ 	width:100%;
+ 	height:180px;
+ 	background:#fff;}
+ #footer_down .footer_down_u{
+ 	width: 1117px;
+ 	height:84px;
+ 	margin:0 auto;
+ 	background:url(http://www.gjw.com/purchase/images/sanBao_07.gif) no-repeat center;}
+ #footer_down .footer_down_d p{
+ 	width:520px;
+ 	height:12px;
+ 	font-size:12px;
+ 	margin:0 auto;}
+ #footer_down .footer_down_d .footer_down_d_p1{
+ 	height:60px;
+ 	line-height:60px;
+ 	text-align:center;
+ 	cursor:pointer;}
+ 
+ #footer_down .footer_down_d .footer_down_d_a{
+ 	width:250px;
+ 	height:48px;
+ 	margin:20px auto 0;}
+ #footer_down .footer_down_d .footer_down_d_a1{
+ 	display:inline-block;
+ 	width:110px;
+ 	height:48px;
+ 	background:url(http://www.gjw.com/v6/images/aut_06.jpg) no-repeat;}
+ #footer_down .footer_down_d .footer_down_d_a2{
+ 	display:inline-block;
+ 	width:110px;
+ 	height:48px;
+ 	background:url(http://www.gjw.com/v6/images/aut_06.jpg) no-repeat;
+ 	background-position:-120px 0;
+ 	margin-left:10px;}

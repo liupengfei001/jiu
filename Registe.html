@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/Registe.css" />
+		<script type="text/javascript" src="js/jquery-1.11.3.js" ></script>
+		<script type="text/javascript" src="js/jquery.validate.js" ></script>
+		<script type="text/javascript" src="js/jquery.validate.messages_zh.js" ></script>
+		<script type="text/javascript" src="js/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="js/Registe.js" ></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div id="top">
+			<a href="index.html"><img src="http://www.gjw.com/v5/images/hd_logo.jpg" /></a>
+			<div class="top_right">
+				<p>如您已有账户 <a href="login.html">请登录</a></p>
+				<a href="" class="top_right_help"><i></i><span>帮助</span></a>
+				<a href="" class="top_right_witter"><i></i><span>在线客服</span></a>
+			</div>
+		</div>
+		<!--主体-->
+		<div id="content">
+			<div class="max">
+				<div class="max_l">
+					<ul >
+						<li><a class="a_phone"><i></i>手机注册</a>
+							<div class="max_l_u"></div>
+						</li>
+						<li><a class="a_email"><i></i>邮箱注册</a>
+							<div class="max_l_u"></div>
+						</li>
+					</ul>
+					<!--表单-->
+					<div class="max_l_d">
+						
+						<!--手机注册-->
+						<form class="max_d_pone">
+							<div class="text_box center border"><span>手机号:</span><input type="text" name="username_phone" required='true' number='true' minlength='11' class="phone_name" /></div>
+							<div class="password_box center border"><span>设置密码:</span><input type="password" name="password_phone" placeholder="6-20个非空字符" required='true' rangelength="6,20" id="field_phone"/></div>
+							<div class="password_sure center border"><span>确认密码:</span><input type="password" name="password_phone2" equalTo="#field_phone"/></div>
+						<!--验证码-->
+							<div class="yanzheng center">
+								<div class="yanzheng_left border">
+									<span>验证码:</span><input type="text" name="yanzheng" required='true' class="auth_code"/>
+								</div>
+								<div class="yanzheng_show border"></div>
+								<input type="button" value="换一张" class="change"/>
+							</div>
+						<!--校验码-->
+							<div class="xiaoyan center border"><span>校验码:</span><input type="button" value="获取校验码" name="xiaoyan" />
+								<i></i><input type="text" name="phone_num" class="phone_num" />
+							</div>
+							<h5 class="center">点击注册，表示您同意购酒网<a> 《服务协议》</a></h5>
+							<p class="center zhuce_box"><input type="button" value="注册" name="submit" class="zhuce zhuce_phone center"/></p>
+						</form>
+						
+						<!--邮箱注册-->
+						<form class="max_d_pone max_d_email">
+							<div class="text_box center border"><span>邮箱:</span><input type="text" name="email" required='true' rangelength="6,18" email='true'/></div>
+							<div class="password_box center border"><span>设置密码:</span><input type="password" name="password_email" placeholder="6-20个非空字符" required='true' rangelength="6,20" id="field_email" /></div>
+							<div class="password_sure center border"><span>确认密码:</span><input type="password" name="password_email2" equalTo="#field_email" /></div>
+							<!--手机号-->
+							<div class="xiaoyan center border"><span>手机号:</span>
+								<i></i><input type="text" name="phone_num" class="phone_num" required='true' minlength='11' style="border:none;"/>
+							</div>
+							<!--验证码-->
+							<div class="yanzheng center" style="left:-10px">
+								<div class="yanzheng_left border">
+									<span>验证码:</span><input type="text" required='true' name="yanzheng"/>
+								</div>
+								<div class="yanzheng_show border"></div>
+								<input type="button" value="换一张" class="change"/>
+							</div>
+							<h5 class="center">点击注册，表示您同意购酒网<a> 《服务协议》</a></h5>
+							<p class="center zhuce_box"><input type="button" name="submit" value="注册" class="zhuce zhuce_email center"/></p>
+						</form>	
+					</div>
+				</div>
+				<div class="max_r">
+					<a href=""></a>
+				</div>
+			</div>
+		</div>
+		
+		<!--网页底部-->
+		<div id="footer">
+			<ul>
+				<li><a href="">关于我们 </a>|</li>
+				<li><a href="">联系我们</a>|</li> 
+				<li><a href="">人才招聘</a>|</li>
+				<li><a href="">隐私声明</a>|</li>
+				<li><a href="">帮助中心</a>|</li>
+				<li><a href="">友情链接</a></li>
+			</ul>
+			<p>Copyright©2009-2016 gjw.com, All Rights Reserved 上海购酒网电子商务有限公司 版权所有</p>
+		</div>
+	</body>
+</html>

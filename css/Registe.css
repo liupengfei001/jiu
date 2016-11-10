@@ -1,0 +1,99 @@
+
+/*公共样式*/
+.red{color: red;}
+
+
+#top{width:100%;height:90px;margin:0 auto;position:relative;}
+#top img{width:200px;height:53px;position:absolute;left:140px;top:20px;cursor: pointer;}
+#top .top_right{width:320px;height:90px;position:absolute;right:140px;}
+#top .top_right p{display:inline-block;width:128px;height:90px;font-size:12px;line-height:90px;}
+#top .top_right .top_right_help{display:inline-block;width:60px;height:30px;line-height:30px;}
+#top .top_right .top_right_help i{display: inline-block;width: 20px;height: 18px;vertical-align:middle;background:url(http://www.gjw.com/login/images/loginIcon.gif) no-repeat;background-position:-1px -1px;}
+#top .top_right .top_right_help span{display:inline-block;font-size:12px;color: #000;}
+
+#top .top_right .top_right_witter{display:inline-block;width:70px;height:30px;line-height:30px;}
+#top .top_right .top_right_witter span{display:inline-block;font-size:12px;color: #000;height:18px;line-height:18px;}
+#top .top_right .top_right_witter i{display: inline-block;width: 20px;height: 18px;vertical-align:middle;background:url(http://www.gjw.com/login/images/loginIcon.gif) no-repeat;background-position:-25px -1px;}
+
+/*主体*/
+
+#content{width:100%;height:610px;background:url(http://www.gjw.com/login/images/login_bg.gif) repeat;margin:0 auto;position:relative;}
+#content .max{width:980px;height:570px;position:relative;top:24px;margin:0 auto;border:5px solid #d7d7d7;background:#fff;}
+
+#content .max .max_l{width:600px;height:566px;border-right:1px solid #dcdcdc;position:absolute;overflow:hidden;}
+#content .max .max_l ul{width:510px;height:86px;margin:0 auto;border-bottom:1px solid #dcdcdc;line-height:86px;}
+#content .max .max_l ul li{float:left;}
+#content .max .max_l ul li a{display:inline-block;width:253px;height:30px;line-height:30px;text-align:center;cursor: pointer;}
+#content .max .max_l ul li .a_phone{border-right:1px solid #D7D7D7;}
+#content .max .max_l ul li a i{display:inline-block;width:24px;height:30px;vertical-align:middle;}
+#content .max .max_l ul li .a_phone i{background:url(http://www.gjw.com/login/images/loginIcon.gif) no-repeat -387px -5px;}
+#content .max .max_l ul li .a_email i{background:url(http://www.gjw.com/login/images/loginIcon.gif) no-repeat -413px -5px;}
+
+
+/*手机注册*/
+
+#content .max .max_l_d{width:1200px;height:420px;position:absolute;left:0;}
+#content .max .max_l_d .max_d_pone .text_box .phone_name{width:80px;}
+#content .max .max_l_d .max_d_pone{width:600px;height:420px;position:absolute;left:0;top:0px;}
+#content .max .max_l_d .center{margin:0 auto;margin-top:10px;}/*公用居中*/
+#content .max .max_l_d .border{border:1px solid #DCDCDC;width:350px;px;height:54px;line-height:54px;padding-left:8px;}/*公用边框*/
+#content .max .max_l_d .max_d_pone input{border:none;width:65px;}
+#content .max .max_l_d .max_d_pone .text_box{margin-top:30px;}
+#content .max .max_l_d .max_d_pone .password_sure{margin-top:0;}
+#content .max .max_l_d .max_d_pone .yanzheng{width:360px;height:54px;line-height:54px;margin:0 auto;margin-top:10px;position:relative;padding-left:0;}
+#content .max .max_l_d .max_d_pone .yanzheng_left{width:160px;height:54px;}
+#content .max .max_l_d .max_d_pone .yanzheng .yanzheng_left input{width:80px;}
+#content .max .max_l_d .max_d_pone .yanzheng_show{width:110px;height:54px;position:absolute;left:180px;top:0;background:#000;color:#fff;text-align:center;font-size:18px;} 
+#content .max .max_l_d .max_d_pone .yanzheng .change{position:absolute;left:305px;top:20px;width:45px;height:20px;font-size:14px;border:none;background:#fff;}
+#content .max .max_l_d .max_d_pone .phone_num{border:1px solid #DCDCDC;width:100px;height:34px;text-align:center;}
+#content .max .max_l_d .max_d_pone h5{width:360px;height:40px;line-height:40px;text-align:left;}
+#content .max .max_l_d .max_d_pone .zhuce{width:360px;height:54px;background:#C40000;color:#fff;}
+#content .max .max_l_d .max_d_pone .zhuce_box{width:360px;}
+
+/*邮箱注册*/
+
+#content .max .max_l_d .max_d_email{position:absolute;left:600px;}
+
+
+
+
+/*右边*/
+
+#content .max .max_r{width:366px;height:566px;position:absolute;right:0px;top:86;text-align:center;}
+#content .max .max_r a{display:inline-block;width:300px;height:360px;margin-top:84px;background:url(http://img0.gjw.com/Famous/2016/0908/875ff173683441aaa870d40171615f22.jpg) no-repeat;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*底部*/
+
+#footer{width:100%;height:60px;margin:60px auto 0;}
+#footer ul{margin:0 auto;width:450px;height: 30px;line-height: 30px;}
+#footer ul li{padding-left:10px;float: left;}
+#footer ul li a{font-size:12px;padding-right: 10px;}
+#footer p{width:510px;font-size:12px;margin:0 auto;}

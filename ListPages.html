@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>商品列表</title>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/com_index.css" />
+	<link rel="stylesheet" href="css/ListPages.css" />
+	<script type="text/javascript" src="js/jquery-1.11.3.js" ></script>
+	<script type="text/javascript" src="js/jquery.pagination.js" ></script>
+	<script type="text/javascript" src="js/jquery.cookie.js" ></script>
+	<script type="text/javascript" src="js/ListPages.js" ></script>
+</head>
+<body>
+<div id="Box_set_top"></div><!--吸顶菜单-->
+<div id="Box_top"></div><!--头部-->
+<div id="Box_up"></div><!--主题内容-->
+
+<div id="Box_one">
+	<span>首页</span><span>&gt;</span>
+	<span>白酒</span><span>&gt;</span>
+</div><!--end首页导航-->
+<div id="Box_brand"><!--品牌-->
+	<div class="Box_brand_l">品牌</div>
+	<div class="Box_brand_c">
+		<p>
+			<a href="">所有品牌</a>
+			<a href="">ABCD</a>
+			<a href="">EFG</a>
+			<a href="">HIJK</a>
+			<a href="">LMN</a>
+			<a href="">OPQ</a>
+			<a href="">RST</a>
+			<a href="">UVW</a>
+			<a href="">XYZ</a>
+		</p>
+		<ul id="Box_brand_c_conten" class="Box_brand_c_conten"></ul>
+	</div>
+	<div class="Box_brand_r">更多</div>
+</div><!--end品牌-->
+
+<div id="hate"><!--选购热点-->
+	<div class="Box_brand_l hate_l">选购热点</div>
+	<div class="Box_brand_c hate_c">
+		<ul id="hate_c_conten" class="Box_brand_c_conten"></ul>
+	</div>
+	<div class="Box_brand_r hate_r">更多</div>
+</div><!--end选购热点结束-->
+
+<div id="Price"><!--价格-->
+	<div class="Box_brand_l Price_l">价格</div>
+	<div class="Box_brand_c Price_c">
+		<ul id="Price_c_conten" class="Box_brand_c_conten"></ul>
+	</div>
+</div><!--end价格-->
+
+<div id="Odor"><!--香型-->
+	<div class="Box_brand_l Odor_l">香型</div>
+	<div class="Box_brand_c Odor_c">
+		<ul id="Odor_c_conten" class="Box_brand_c_conten"></ul>
+	</div>
+	<div class="Box_brand_r Odor_r">更多</div>
+</div><!--end香型-->
+
+<div id="Degrees"><!--度数-->
+	<div class="Box_brand_l Degrees_l">度数</div>
+	<div class="Box_brand_c Degrees_c">
+		<ul id="Degrees_c_conten" class="Box_brand_c_conten"></ul>
+	</div>
+	<div class="Box_brand_r Degrees_r">更多</div>
+</div><!--end度数-->
+
+<div id="Net"><!--净含量-->
+	<div class="Box_brand_l Net_l">净含量</div>
+	<div class="Box_brand_c Net_c">
+		<ul id="Net_c_conten" class="Box_brand_c_conten"></ul>
+	</div>
+	<div class="Box_brand_r Net_r">更多</div>
+</div><!--end净含量-->
+
+<div id="Commodity"><!--商品产地-->
+	<div class="Box_brand_l Commodity_l">商品产地</div>
+	<div class="Box_brand_c Commodity_c">
+		<ul id="Commodity_c_conten" class="Box_brand_c_conten"></ul>
+	</div>
+	<div class="Box_brand_r Commodity_r">更多</div>
+</div><!--end商品产地-->
+
+<div id="Occasion"><!--适用场合-->
+	<div class="Box_brand_l Occasion_l">适用场合</div>
+	<div class="Box_brand_c Occasion_c">
+		<ul id="Occasion_c_conten" class="Box_brand_c_conten"></ul>
+	</div>
+	<div class="Box_brand_r Occasion_r">更多</div>
+</div><!--end适用场合-->
+
+
+
+
+
+<!--列表筛选-->
+<div id="list_screen">
+	<div class="list_screen_l">
+		<ul> 
+			<li><a href="">销量&darr;</a></li>
+			<li><a href="">价格</a></li>
+			<li><a href="">评论数</a></li>
+			<li><a href="">上架时间</a></li>
+		</ul>
+	</div>
+	<div class="list_screen_c">
+		<input type="checkbox" class="list_screen_c_btn" />仅显示有货
+	</div>
+	<div class="list_screen_r">
+		<span>1</span>/25
+		<span class="list_screen_r_prev list_screen_r_com">&lt;</span><span  class="list_screen_r_next list_screen_r_com">&gt;</span>
+	</div>
+</div><!--end列表筛选-->
+
+<!--图片列表主要内容-->
+
+<div id="list_content">
+	
+	<!--<dl>
+		<a href=""class="lianjie"></a>
+		<dt><img src=""/></dt>
+		<dd><strong>￥999</strong><span>关注度 231802</span></dd>
+		<dd><a href="DetailPages.html">53度 茅台 飞天带杯（2016年产）500ml</a><br />
+			<b>21awTREWr</b>
+		</dd>
+		<dd>
+			<li class="list_box_l">418</li>
+			<li class="list_box_c">收藏</li>
+			<li class="list_box_r"><a href="">加入购物车</a></li>
+		</dd>
+	</dl>-->
+</div>
+
+
+<!--页码-->
+
+<div id="setPageDiv">
+    <div id="Pagination" class="pagination"></div>
+</div>
+<!--热门品牌-->
+<div id="hate_brand">
+	<h1>热门品牌</h1>
+	<dl>
+		<dt>洋河</dt>
+		<dd><img src="http://img0.gjw.com/Famous/2016/0317/6b294aabdf1c469bbab38bfc27a5555c.jpg"/></dd>
+	</dl>
+	<dl>
+		<dt>澳州奔富</dt>
+		<dd><img src="http://img0.gjw.com/Famous/2016/0317/7a30a71a0aa24e269f1f8204c87c6cc2.jpg"/></dd>
+	</dl>
+	<dl>
+		<dt>汾酒</dt>
+		<dd><img src="http://img0.gjw.com/Famous/2016/0317/f5500ca44edb4ea4bea94e70fd488eb0.jpg"/></dd>
+	</dl>
+	<dl>
+		<dt>郎酒</dt>
+		<dd><img src="http://img0.gjw.com/Famous/2016/0317/b44067ad8ac44d8283ed38914e4919d4.jpg"/></dd>
+	</dl>
+	<dl>
+		<dt>皇家路易</dt>
+		<dd><img src="http://img0.gjw.com/Famous/2016/0331/6b9117b8f29d425080d0a38a1e741432.jpg"/></dd>
+	</dl>
+</div><!--end热门品牌-->
+
+
+
+<div id="Box_footer"></div><!--网页底部-->
+</body>
+</html>

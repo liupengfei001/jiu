@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="jquery-1.11.3.js" ></script>
+		<script type="text/javascript" src="jquery.validate.js" ></script>
+		<script type="text/javascript" src="jquery.validate.messages_zh.js" ></script>
+		<script>
+			$(function()
+			{
+				$('form').validate()
+				
+			})
+			
+		</script>
+	</head>
+	<body>
+		<form>
+			<p>用户名：<input type="text" name="username"  required='true' minlength='6'>(*)</p>
+			<p>密 码：<input type="text" name="password" required='true' rangelength="6,18" id="field">(*)</p>
+			<p>再次确认：<input type="password" name="password"  rangelength="6,18" equalTo="#field">(*)</p>
+			<p>邮箱：<input type="text" name="email" required='true' rangelength="6,18" email='true'>(*)</p>
+			<p>网址：<input type="text" name="url" required='true' url='true'>(*)</p>
+			<p><input type="submit" name="submit" value="提交"></p>
+		</form>
+	</body>
+</html>

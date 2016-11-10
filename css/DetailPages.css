@@ -1,0 +1,324 @@
+
+/*隐藏轮播*/
+#Max_lunbo,#mune,#banner_right{
+	display: none;}
+	
+#nav_up .nav_up_r .shopping_tip .Del{cursor: pointer;}
+#banner{
+	height:0px;}
+	
+/*详情标题*/
+#title{
+	width:1200px;
+	height:40px;
+	margin:0 auto;
+	line-height:40px;}
+	
+/*放大镜*/	
+	
+#magnifying{
+	width:1200px;
+	height:560px;
+	margin:0 auto;}
+/*放大镜左边*/
+#magnifying .magnifying_l{
+	width:420px;
+	height:550px;
+	float:left;
+	border:1px solid #C5C5C5;
+	position:relative;}
+	
+/*左上*/
+#magnifying .magnifying_l .m_l_u{
+	width:420px;
+	height:420px;
+	border-bottom:1px solid #C5C5C5;
+	position:relative;}
+#magnifying .magnifying_l .m_l_u img{
+	width:420px;
+	height:420px;}	
+	
+/*左上遮罩*/			
+#magnifying .m_l_u_box{
+	width:270px;
+	height:270px;
+	opacity:0.5;
+	position:absolute;
+	z-index:1;
+	background:#F7F7F7;
+	top:0;left:0;
+	display:none;}
+
+#magnifying #box_cover{
+	width:420px;
+	height:420px;
+	position:absolute;
+	left:0;top:0;
+	z-index:2;
+	}
+
+	
+/*右边大盒子*/
+#magnifying .magnifying_l .right_box{
+	width:420px;
+	height:420px;
+	position:absolute;
+	left:450px;
+	top:0;
+	overflow:hidden;
+	border:1px solid #C5C5C5;
+	display:none;}			
+#magnifying .magnifying_l .right_box img{
+	width:840px;
+	height:840px;
+	position:absolute;
+	z-index:5;}			
+
+/*左中*/											
+#magnifying .magnifying_l .m_l_c{
+	width:420px;
+	height:90px;
+	border-bottom:1px solid #C5C5C5;
+	line-height:140px;}
+
+/*左中图片列表*/
+#magnifying .magnifying_l .m_l_c img{
+	width:65px;
+	height:60px;
+	margin-left:10px;
+	border:1px solid #fff;}
+
+
+/*左下*/
+#magnifying .magnifying_l .m_l_d{
+	width:420px;
+	height:40px;}
+
+
+/*左下-分享到*/
+.m_l_d span{
+	display:inline-block;
+	width:20px;
+	height:20px;
+	cursor:pointer;}
+.m_l_d .span1{
+	background:url(http://bdimg.share.baidu.com/static/api/img/share/icons_0_16.png?v=91362611.png) no-repeat 0 4px;}
+.m_l_d .span2{
+	background:url(http://bdimg.share.baidu.com/static/api/img/share/icons_0_16.png?v=91362611.png) no-repeat 0 -100px;}
+.m_l_d .span3{
+	background:url(http://bdimg.share.baidu.com/static/api/img/share/icons_0_16.png?v=91362611.png) no-repeat 0 -152px;}
+.m_l_d .span4{
+	background:url(http://bdimg.share.baidu.com/static/api/img/share/icons_0_16.png?v=91362611.png) no-repeat 0 -205px;}
+.m_l_d .span5{
+	background:url(http://bdimg.share.baidu.com/static/api/img/share/icons_0_16.png?v=91362611.png) no-repeat 0 -620px;}
+
+
+
+
+
+
+/*右-商品介绍*/
+#magnifying .magnifying_r{
+	width:520px;
+	height:550px;
+	float:left;
+	margin-left:30px;}
+	
+#magnifying .magnifying_r .shadow_box{
+	width:510px;
+	height:110px;
+	padding-left: 10px;
+	background:#EAEAEA;}
+
+#magnifying .magnifying_r .shadow_box p{
+	height:36px;
+	line-height: 36px;
+	font-size:12px;}
+	
+#magnifying .magnifying_r .shadow_box p b{
+	font-size:20px;
+	font-weight:900;
+	color: #C81623;}	
+#magnifying .magnifying_r .shadow_box p span{
+	background: #CC0000;
+	color:#fff;}
+
+#magnifying .magnifying_r .select_box{
+	height:54px;
+	line-height:54px;}
+
+#magnifying .magnifying_r .dashed{
+	width:520px;
+	height: 36px;
+	border:1px dashed #ccc;
+	border-right:none;
+	border-left:none;
+	line-height:36px;} 
+#magnifying .magnifying_r .dashed span{
+	border-right:1px solid #000;
+	display: inline-block;
+	width:100px;
+	height: 16px;
+	padding-left: 30px;
+	line-height: 16px;
+	color:#C40000;}
+#magnifying .magnifying_r .dashed strong{	
+	color: #C40000;}
+
+#magnifying .magnifying_r .mith{
+	width:520px;
+	height:60px;
+	line-height: 60px;}
+
+#magnifying .magnifying_r .mith span{
+	display:inline-block;
+	width:40px;
+	height: 30px;
+	border:1px solid #ccc;
+	vertical-align: middle;
+	line-height:30px;
+	text-align:center;}
+	
+#magnifying .magnifying_r .mith ul{
+	display:inline-block;
+	vertical-align: middle;}
+#magnifying .magnifying_r .mith ul li{
+	width:18px;
+	height:12px;
+	text-align:center;
+	line-height:12px;
+	margin-bottom:2px;
+	margin-left:5px;
+	border:1px solid #ccc;
+	cursor:pointer;}
+
+#magnifying .magnifying_r .shopping{
+	width:520px;
+	height:60px;
+	line-height:60px;}
+	
+#magnifying .magnifying_r .shopping span{
+	display:inline-block;
+	width:180px;
+	height: 40px;
+	text-align:center;
+	line-height:40px;
+	font-size:18px;
+	color:#fff;
+	background:#C40000;
+	cursor:pointer;}
+	
+#magnifying .magnifying_r .shopping .shopping_now{
+	height:38px;
+	background: #FFEEEE;
+	border:1px solid #C20106;
+	color: #CA0022;}
+
+/*tab页*/
+
+#tab{width:1200px;
+	height:7980px;
+	margin:0 auto;}
+
+#tab_out{width:200px;
+		height:2000px;
+		float:left;}
+		
+#tab_out ul a{cursor:pointer;}
+
+#tab_inner{width:990px;
+	float:left;}
+#tab_inner .tab_top{
+	width:990px;
+	height:36px;
+	border-bottom:1px solid #C9C9C9;}
+#tab_inner .tab_top p{
+	border-top:2px solid #999999;
+	background:#F7F7F7;}
+
+	
+#tab_inner .tab_top p a{
+	display:inline-block;
+	width:90px;
+	height: 34px;
+	text-align:center;
+	line-height:34px;}
+#tab_inner .tab_top p .active{
+	border-top:3px solid #C40000;
+	height:38px;
+	background:#fff;
+	color:#C40000;
+	border-left:1px solid #C8C8C8;
+	border-right:1px solid #C8C8C8;}
+
+/*商品介绍列表*/
+#tab_inner .introduction{
+	margin-top:30px;
+	margin-left:20px;
+	height:100px;}
+
+#tab_inner .introduction li{
+	width:242px;
+	height:25px;
+	line-height:25px;
+	text-align:left;
+	float:left;
+	font-size:12px;}
+
+#tab_inner .tab_pic div{
+	width:740px;
+	height:622px;
+	background:url(http://www.gjw.com/image/product_detail_bg.jpg) no-repeat;
+	text-align:center;
+	background-size:cover;
+	margin-left:80px;}
+
+#tab_inner .tab_pic div img{
+	width:449px;
+	height:400px;
+	vertical-align: middle;
+	margin-top:40px;}
+	
+#tab_inner .tab_pic h1{
+	width:990px;
+	height:30px;
+	border:1px solid #C8C8C8;}
+#tab_inner .tab_pic ol{
+	width:990px;
+	border:1px solid #C8C8C8;}
+
+#tab_inner .tab_pic ol li{
+	width:990px;
+	height:50px;
+	line-height:50px;
+	margin-left:30px;
+	list-style:disc;}
+
+/*商品评论*/
+
+table{
+	border:1px solid #C5C5C5;
+	padding: 10px;
+	width:992px;}
+table tr{
+	height:50px;}
+table tr td{
+	width: 100px;
+	text-align:left;
+	color:#787878;
+	font-size:10px;}
+table tr .title{
+	color:#C40000;
+	font-size: 16px;
+	font-weight:800;}
+table tr .comt_c{width:866px;}
+
+
+
+
+
+
+
+
+
+		
